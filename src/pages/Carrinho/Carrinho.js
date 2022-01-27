@@ -1,7 +1,7 @@
 export default function Carrinho() {
 
     return (
-        <div></div>
+        <div>Carrinho</div>
     );
 
 }
