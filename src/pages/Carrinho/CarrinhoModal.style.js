@@ -15,7 +15,7 @@ export const Div = styled.div`
     top: 229px;
     display: block;
     flex-direction: column;
-    background-color: #ffffff;
+    background-color: ${props => props.theme.background};
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
     border-radius: 20px;
 `;
@@ -94,7 +94,8 @@ export const Voltar = styled.button`
     height: 46px;
     left: 307px;
     top: 610px;
-    background: #404040;
+    background-color: ${props => props.theme.buttonBg};
+    color: ${props => props.theme.buttonFg};
     color: white;
     border-radius: 5px;
     box-sizing: border-box;

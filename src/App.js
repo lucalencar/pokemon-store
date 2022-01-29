@@ -1,15 +1,21 @@
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import { GlobalStyle } from './styles/global.js';
+import { ThemeProvider } from 'styled-components';
 import Carrinho from './pages/Carrinho/Carrinho.js';
 import Details from './pages/Details/Details.js';
 import Home from './pages/Home/Home.js';
 import Login from './pages/Login/Login.js';
 import Perfil from './pages/Perfil/Perfil.js';
 import CarrinhoModal from './pages/Carrinho/CarrinhoModal.js';
+import useTheme from './hooks/useChangeTheme.js';
 
 function App() {
+
+  const { theme } = useTheme();
+
   return (
-      <BrowserRouter basename="/">
+    <BrowserRouter basename="/">
+      <ThemeProvider theme={theme}>
         <GlobalStyle />
         <div>
           <Routes>
@@ -21,7 +27,8 @@ function App() {
             <Route path="/carrinho" element={<Carrinho />} />
             <Route path="/carrinhomodal" element={<CarrinhoModal />} />
           </Routes>
-          </div>
+        </div>
+      </ThemeProvider>
     </BrowserRouter>
   );
 }

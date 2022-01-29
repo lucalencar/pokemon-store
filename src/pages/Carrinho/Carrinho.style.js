@@ -22,7 +22,7 @@ export const Div = styled.div`
     top: 115px;
     display: block;
     flex-direction: column;
-    background-color: #ffffff;
+    background-color: ${props => props.theme.background};
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
     border-radius: 20px;
 `;
@@ -34,7 +34,7 @@ export const TopDiv = styled.div`
     top: 115px;
     display: block;
     flex-direction: column;
-    background-color: #ffffff;
+    background-color: ${props => props.theme.background};
     border-radius: 20px;
 `;
 
@@ -44,7 +44,7 @@ export const ItemDiv = styled.div`
     left: 239px;
     top: 115px;
     flex-direction: column;
-    background: #ffffff;
+    background: ${props => props.theme.background};
     margin: auto;
     overflow: auto;
     `;
@@ -64,7 +64,7 @@ export const BottomDiv = styled.div`
     left: 239px;
     top: 115px;
     flex-direction: column;
-    background-color: #ffffff;
+    background-color: ${props => props.theme.background};
     margin: auto;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -143,10 +143,11 @@ width: 210px;
 height: 46px;
 left: 307px;
 top: 610px;
-
-border: 2px solid #717171;
+border: 2px solid;
 box-sizing: border-box;
 border-radius: 5px;
+background-color: ${props => props.theme.buttonBg};
+color: ${props => props.theme.buttonFg};
 `;
 
 export const Finalizar = styled.button`
@@ -154,7 +155,9 @@ width: 210px;
 height: 46px;
 left: 307px;
 top: 610px;
-border: 2px solid #717171;
+border: 2px solid;
 box-sizing: border-box;
 border-radius: 5px;
+background-color: ${props => props.theme.buttonBg};
+color: ${props => props.theme.buttonFg};
 `;
