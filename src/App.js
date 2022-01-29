@@ -9,6 +9,7 @@ import Perfil from './pages/Perfil/Perfil.js';
 import CarrinhoModal from './pages/Carrinho/CarrinhoModal.js';
 import useTheme from './hooks/useChangeTheme.js';
 
+
 function App() {
 
   const { theme } = useTheme();

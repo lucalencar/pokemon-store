@@ -1,22 +1,25 @@
 import { useNavigate } from "react-router-dom";
 import * as S from "./Carrinho.style";
 import PokeImg from '../../img/025.png';
-
+import { useEffect, useState } from "react";
+import useCounter from "../../hooks/useCounter";
 
 export default function Carrinho() {
 
     const navigate = useNavigate();
 
+    const { counter, increase, decrease } = useCounter();
+
     return (
         <S.MainBox>
             <S.Div>
                 <S.TopDiv>
-                <S.Container>
-                    <S.TituloLeft>Product</S.TituloLeft>
-                    <S.TituloCenter>Quantity</S.TituloCenter>
-                    <S.TituloRight>Preço</S.TituloRight>
-                    <S.TituloRight>Subtotal</S.TituloRight>
-                </S.Container>
+                    <S.Container>
+                        <S.TituloLeft>Product</S.TituloLeft>
+                        <S.TituloCenter>Quantity</S.TituloCenter>
+                        <S.TituloRight>Preço</S.TituloRight>
+                        <S.TituloRight>Subtotal</S.TituloRight>
+                    </S.Container>
                 </S.TopDiv>
                 <S.Container></S.Container>
                 <S.ItemDiv>
@@ -35,9 +38,9 @@ export default function Carrinho() {
                         <S.Img src={PokeImg}></S.Img>
                         <S.ItemLeft><S.Texto>Pikachu</S.Texto></S.ItemLeft>
                         <S.ItemLeft>
-                            <button>+</button>
-                            <S.Input type="text" size="2" />
-                            <button>-</button>
+                            <button onClick={increase}>+</button>
+                            <S.Input type="text" size="2" value={counter} />
+                            <button onClick={decrease}>-</button>
                         </S.ItemLeft>
                         <S.ItemRight>R$50,000</S.ItemRight>
                         <S.ItemRight>R$100.000</S.ItemRight>
