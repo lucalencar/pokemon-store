@@ -9,7 +9,7 @@ export default function useCounter() {
     const dispatch = useDispatch();
 
     const [counter, setCounter] = useState(0);
-
+    
     const increase = () => {
         dispatch(increaseAction());
     }
@@ -24,11 +24,17 @@ export default function useCounter() {
     }
 
     useEffect(() => {
-        setCounter(state.count)
+        setCounter(state.count);
     }, [state]);
 
+    const defaultPrice = 50000;
+
+    function changePrice(defaultPrice) {
+        const preco = (defaultPrice * counter).toLocaleString();
+        return preco;
+    }
 
     return {
-        counter, increase, decrease
+        counter, increase, decrease, defaultPrice, changePrice
     };
 }

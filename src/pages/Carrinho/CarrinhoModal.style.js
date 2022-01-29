@@ -1,23 +1,18 @@
 import styled from "styled-components";
 
-export const MainBox = styled.div`
-    height: 100vh;
-    background-color: #f8f5ec;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-`;
-
 export const Div = styled.div`
+    position: absolute;
     width: 365px;
     height: 310px;
-    left: 501px;
+    left: 600px;
     top: 229px;
     display: block;
     flex-direction: column;
     background-color: ${props => props.theme.background};
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
     border-radius: 20px;
+    border-color: #d4d4d4;
+    border-style: solid;
 `;
 
 export const Container = styled.div`
@@ -78,7 +73,7 @@ export const VoltarDiv = styled.div`
 
 `;
 
-export const CloseButton = styled.div`
+export const CloseButton = styled.button`
 	flex: 1;
 	margin: 5px;
 	text-align: right;
@@ -87,6 +82,9 @@ export const CloseButton = styled.div`
     font-style: normal;
     line-height: 125.2%;
     font-size: 18px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
 `;
 
 export const Voltar = styled.button`

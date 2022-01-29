@@ -1,14 +1,13 @@
 import * as S from './CarrinhoModal.style';
-import CarrinhoIcon from '../../img/Carrinho.svg'
+import CarrinhoIcon from '../../img/Carrinho.svg';
 
-export default function CarrinhoModal() {
+export default function CarrinhoModal({closeModal}) {
 
     return (
-        <S.MainBox>
             <S.Div>
                 <S.TopDiv>
                     <S.Container>
-                        <S.CloseButton>X</S.CloseButton>
+                        <S.CloseButton onClick={() => closeModal(false)}>X</S.CloseButton>
                     </S.Container>
                 </S.TopDiv>
                 <S.IconDiv>
@@ -30,10 +29,9 @@ export default function CarrinhoModal() {
                 </S.DetalhesDiv>
                 <S.VoltarDiv>
                     <S.Container>
-                        <S.Voltar>Voltar</S.Voltar>
+                        <S.Voltar onClick={() => closeModal(false)}>Voltar</S.Voltar>
                     </S.Container>
                 </S.VoltarDiv>
             </S.Div>
-        </S.MainBox>
     );
 }

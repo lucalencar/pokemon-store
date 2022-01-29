@@ -26,7 +26,6 @@ function App() {
             <Route path="/perfil" element={<Perfil />} />
             <Route path="/details" element={<Details />} />
             <Route path="/carrinho" element={<Carrinho />} />
-            <Route path="/carrinhomodal" element={<CarrinhoModal />} />
           </Routes>
         </div>
       </ThemeProvider>
