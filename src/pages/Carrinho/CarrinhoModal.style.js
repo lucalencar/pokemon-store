@@ -83,8 +83,10 @@ export const CloseButton = styled.button`
     line-height: 125.2%;
     font-size: 18px;
     background-color: transparent;
+    color: #292929;
     border: none;
     cursor: pointer;
+    
 `;
 
 export const Voltar = styled.button`
@@ -95,10 +97,10 @@ export const Voltar = styled.button`
     background-color: ${props => props.theme.buttonBg};
     color: ${props => props.theme.buttonFg};
     color: white;
-    border-radius: 5px;
+    border: 2px solid;
     box-sizing: border-box;
     border-radius: 5px;
-
+    cursor: pointer;
     font-family: Lato;
     font-style: normal;
     font-weight: bold;

@@ -15,6 +15,7 @@ export const Container = styled.section`
     flex-direction: row;
 `;
 
+
 export const Div = styled.div`
     width: 920px;
     height: 595px;
@@ -50,7 +51,7 @@ export const ItemDiv = styled.div`
     `;
 
 export const SubTotalDiv = styled.div`
-    width: 850px;
+    width: 840px;
     height: 20px;
     left: 239px;
     top: 115px;
@@ -87,8 +88,7 @@ export const Item = styled.div`
 `;
 
 export const TituloCol = styled(Item)`
-
-color: #717171;
+color: #404040;
 `;
 
 export const TituloLeft = styled(TituloCol)`
@@ -132,10 +132,38 @@ export const TextoRight = styled.div`
 text-align: right;
 `;
 
+export const PokemonName = styled.div`
+text-align: left;
+font-family: Lato;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 125.2%;
+`;
+
+export const TextoTotal = styled(TextoRight)`
+font-family: Lato;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 125.2%;
+`;
+
+export const TextoPreco = styled(TextoRight)`
+font-family: Lato;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 125.2%;
+`;
+
 export const Input = styled.input`
 text-align: center;
 border-radius: 10px;
+border: 1px solid #292929;
+box-sizing: content-box;
 height: 30px;
+margin: 3px;
 `;
 
 export const Continuar = styled.button`
@@ -148,6 +176,7 @@ box-sizing: border-box;
 border-radius: 5px;
 background-color: ${props => props.theme.buttonBg};
 color: ${props => props.theme.buttonFg};
+cursor: pointer;
 `;
 
 export const Finalizar = styled.button`
@@ -160,4 +189,32 @@ box-sizing: border-box;
 border-radius: 5px;
 background-color: ${props => props.theme.buttonBg};
 color: ${props => props.theme.buttonFg};
+cursor: pointer;
+`;
+
+export const AddRemove = styled.button`
+	flex: 1;
+	text-align: right;
+	font-size: 1.5em;
+    font-family: Lato;
+    font-style: normal;
+    line-height: 125.2%;
+    font-size: 20px;
+    background-color: transparent;
+    color: #292929;
+    border: none;
+    cursor: pointer;
+
+    &:active {
+        color: salmon;
+    }
+`;
+
+export const IconItem = styled.div`
+	flex: 1;
+    text-align: center;
+`;
+
+export const Icon = styled.img`
+    height: 25px;
 `;

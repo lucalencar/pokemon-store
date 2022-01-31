@@ -6,7 +6,6 @@ import Details from './pages/Details/Details.js';
 import Home from './pages/Home/Home.js';
 import Login from './pages/Login/Login.js';
 import Perfil from './pages/Perfil/Perfil.js';
-import CarrinhoModal from './pages/Carrinho/CarrinhoModal.js';
 import useTheme from './hooks/useChangeTheme.js';
 
 

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { decreaseAction, increaseAction } from "../redux/actions";
+import { decreaseAction, increaseAction } from "../redux/actions/CounterAction";
 
 export default function useCounter() {
 
@@ -27,14 +27,13 @@ export default function useCounter() {
         setCounter(state.count);
     }, [state]);
 
-    const defaultPrice = 50000;
 
-    function changePrice(defaultPrice) {
-        const preco = (defaultPrice * counter).toLocaleString();
+    function subTotal(pokemonPreco) {
+        const preco = (pokemonPreco * counter).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
         return preco;
     }
 
     return {
-        counter, increase, decrease, defaultPrice, changePrice
+        counter, increase, decrease, subTotal
     };
 }
