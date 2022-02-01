@@ -18,6 +18,13 @@ export const list = styled.div`
     height: 620px !important;
     margin-left: 54px;
     margin-top: -226px;
+    transition: all 0.5s;
+
+    &:hover{
+      transition: 2px;
+      -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+      filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+    }
   }
   
 
@@ -32,7 +39,7 @@ export const list = styled.div`
   .TipoPokemon{
     font-size: 14px;
     font-size: 14px;
-    margin-top: -188px;
+    margin-top: -190px;
     margin-left: 10px;
   }
 `;
@@ -54,7 +61,7 @@ export const Pokemon = styled.div`
     box-shadow: 5px 6px 10px rgb(0 0 0 / 10%);
     border-radius: 15px;
     width: 207px;
-    height: 315px;
+    height: 345px;
     margin-left: 73px;
 
 `;
@@ -69,7 +76,7 @@ background: #717171;
     text-align: center;
     padding-top: 5px;
     border-radius: 7px;
-    margin-top: 273px;
+    margin-top: 301px;
     margin-left: 10px;
     cursor: pointer;
 
@@ -96,5 +103,18 @@ export const Load = styled.div`
     &:hover{
       color: #CAC20C;
     }
+
+`;
+
+export const Price = styled.h4`
+
+    color: #4a4a4a;
+    margin-top: 12px;
+    margin-left: 12px;
+    font-size: 17px; 
+    &:hover{
+      color: #CAC20C;
+    }
+    
 
 `;

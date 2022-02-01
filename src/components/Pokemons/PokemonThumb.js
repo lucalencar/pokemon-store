@@ -12,6 +12,7 @@ const PokemonThumb = ({ image, name, type, price }) => {
                 <small className="TipoPokemon">Pokemon tipo {type}</small>
                 
                 <S.Detalhes> + detalhes </S.Detalhes>
+                <S.Price> {price} </S.Price>
             </div>
             <S.Button> Adicionar ao carrinho </S.Button>
         </S.Pokemon>
