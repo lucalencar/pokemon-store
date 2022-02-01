@@ -18,15 +18,6 @@ export const list = styled.div`
     height: 620px !important;
     margin-left: 54px;
     margin-top: -226px;
-    transition: all 0.5s;
-
-    &:hover{
-      
-      -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
-      filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
-      -webkit-transform: scale(1.2);
-    transform: scale(1.2);
-    }
   }
   
 
@@ -41,14 +32,20 @@ export const list = styled.div`
   .TipoPokemon{
     font-size: 14px;
     font-size: 14px;
-    margin-top: -190px;
+    margin-top: -188px;
+    margin-left: 10px;
+  }
+
+  p {
+    font-size: 14px;
+    margin-top: auto;
     margin-left: 10px;
   }
 `;
 
 
 export const Pokemon = styled.div`
-    margin: 25px 20px;
+    margin: 100px 20px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -63,9 +60,14 @@ export const Pokemon = styled.div`
     box-shadow: 5px 6px 10px rgb(0 0 0 / 10%);
     border-radius: 15px;
     width: 207px;
-    height: 345px;
+    height: 315px;
     margin-left: 73px;
 
+
+`;
+
+export const ButtonDetails = styled.div`
+    cursor: pointer;
 `;
 
 export const Button = styled.div`
@@ -78,7 +80,7 @@ background: #717171;
     text-align: center;
     padding-top: 5px;
     border-radius: 7px;
-    margin-top: 301px;
+    margin-top: 273px;
     margin-left: 10px;
     cursor: pointer;
 
@@ -89,19 +91,13 @@ background: #717171;
 `;
 
 
-export const Detalhes = styled.div`
+/*export const Link = styled.link`
 
     color:#4a4a4a;
     margin-left: 10px;
     cursor: pointer;
 
-`;
-
-export const Pokecontainer = styled.div`
-
-    margin-top: 106px;
-
-`;
+`;*/
 export const Load = styled.div`
 
     color:#4a4a4a;
@@ -114,15 +110,3 @@ export const Load = styled.div`
 
 `;
 
-export const Price = styled.h4`
-
-    color: #4a4a4a;
-    margin-top: 12px;
-    margin-left: 12px;
-    font-size: 17px; 
-    &:hover{
-      color: #CAC20C;
-    }
-    
-
-`;

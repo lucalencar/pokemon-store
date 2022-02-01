@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from "react";
 import _ from "lodash";
-import {Link} from "react-router-dom";
 import * as S from "./styles";
 import PokemonThumb from '../Pokemons/PokemonThumb';
 
@@ -10,12 +9,6 @@ const PokemonList = (props) => {
 
   const[allPokemons, setAllPokemons] = useState([])
   const [loadMore, setLoadMore] = useState('https://pokeapi.co/api/v2/pokemon?limit=20')
-  
-
-  function preco(index) {
-    const price = (Math.random() * ((30000 * index) - (5000 * index)) + (5000 * index)).toLocaleString('pt-br', { style: 'currency', currency: 'BRL' });
-    return price;
-  }
 
  const getAllPokemons = async () => {
    const res = await fetch(loadMore)
@@ -37,10 +30,11 @@ const PokemonList = (props) => {
 useEffect(() => {
  getAllPokemons()
 }, [])
-// TELA CARREGAR MAIS
+
+  // TELA CARREGAR MAIS
  return (
    <div className="app-contaner">
-     <S.Pokecontainer>
+     <div className="pokemon-container">
     
          {allPokemons.map( (pokemonStats, index) => 
            <PokemonThumb
@@ -48,13 +42,13 @@ useEffect(() => {
              id={pokemonStats.id}
              image={pokemonStats.sprites.other.dream_world.front_default}
              name={pokemonStats.name}
-             type={pokemonStats.types[0].type.name}          
-             price={preco(`${index + 1}`)}
+             type={pokemonStats.types[0].type.name}
+             
            />)}
       
          <S.Load className="load-more" onClick={() => getAllPokemons()}>Carregar mais...</S.Load>
       
-     </S.Pokecontainer>
+     </div>
    
    </div>
  );
