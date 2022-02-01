@@ -29,7 +29,7 @@ export const Div = styled.div`
 `;
 
 export const TopDiv = styled.div`
-    width: 910px;
+    width: 920px;
     height: 20px;
     left: 239px;
     top: 115px;
@@ -40,7 +40,7 @@ export const TopDiv = styled.div`
 `;
 
 export const ItemDiv = styled.div`
-    width: 920px;
+    width: 912px;
     height: 400px;
     left: 239px;
     top: 115px;
@@ -78,7 +78,7 @@ overflow: scroll;
 
 export const Item = styled.div`
 	flex: 1;
-	margin: 5px;
+	margin: 3px;
 	text-align: center;
 	font-size: 1.5em;
     font-family: Lato;
@@ -100,6 +100,7 @@ text-align: right;
 `;
 
 export const TituloCenter = styled(TituloCol)`
+margin-left: 32px;
 text-align: center;
 `;
 
