@@ -4,7 +4,6 @@ import { useState } from "react";
 import useCounter from "../../hooks/useCounter";
 import CarrinhoModal from "./CarrinhoModal";
 import TrashIcon from '../../img/trash.svg';
-import Navbar from "../../components/Header/Navbar";
 
 export default function Carrinho() {
 
@@ -23,7 +22,6 @@ export default function Carrinho() {
 
     return (
         <S.MainBox>
-            <Navbar />
             <S.Div>
                 <S.TopDiv>
                     <S.Container>
