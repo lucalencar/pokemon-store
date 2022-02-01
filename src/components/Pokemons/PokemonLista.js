@@ -10,6 +10,12 @@ const PokemonList = (props) => {
 
   const[allPokemons, setAllPokemons] = useState([])
   const [loadMore, setLoadMore] = useState('https://pokeapi.co/api/v2/pokemon?limit=20')
+  
+
+  function preco(index) {
+    const price = (Math.random() * ((30000 * index) - (5000 * index)) + (5000 * index)).toLocaleString('pt-br', { style: 'currency', currency: 'BRL' });
+    return price;
+  }
 
  const getAllPokemons = async () => {
    const res = await fetch(loadMore)
@@ -42,8 +48,8 @@ useEffect(() => {
              id={pokemonStats.id}
              image={pokemonStats.sprites.other.dream_world.front_default}
              name={pokemonStats.name}
-             type={pokemonStats.types[0].type.name}
-             
+             type={pokemonStats.types[0].type.name}          
+             price={preco(`${index + 1}`)}
            />)}
       
          <S.Load className="load-more" onClick={() => getAllPokemons()}>Carregar mais...</S.Load>
