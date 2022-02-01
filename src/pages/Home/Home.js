@@ -7,7 +7,7 @@ import Carregar from "../../../src/img/pokedexloading.gif";
 export default function Carrinho() {
 
     const navigate = useNavigate();
-    //tela de carregamento
+//tela de carregamento
     const [loading, setLoading] = useState(false);
 
     useEffect(()=>{
