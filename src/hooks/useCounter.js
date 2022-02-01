@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { decreaseAction, increaseAction } from "../redux/actions/CounterAction";
+import { decreaseAction, increaseAction } from "../redux/action/CounterAction";
 
 export default function useCounter() {
 
