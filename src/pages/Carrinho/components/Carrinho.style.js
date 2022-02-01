@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import PokeImg from '../../img/025.png';
 
 export const MainBox = styled.div`
     height: 100vh;
@@ -16,7 +15,7 @@ export const Container = styled.section`
 `;
 
 
-export const Div = styled.div`
+export const CardBox = styled.div`
     width: 920px;
     height: 595px;
     left: 239px;
@@ -37,10 +36,11 @@ export const TopDiv = styled.div`
     flex-direction: column;
     background-color: ${props => props.theme.background};
     border-radius: 20px;
+    margin: 10px;
 `;
 
 export const ItemDiv = styled.div`
-    width: 920px;
+    width: 912px;
     height: 400px;
     left: 239px;
     top: 115px;
@@ -50,7 +50,7 @@ export const ItemDiv = styled.div`
     overflow: auto;
     `;
 
-export const SubTotalDiv = styled.div`
+export const TotalDiv = styled.div`
     width: 840px;
     height: 20px;
     left: 239px;
@@ -73,12 +73,12 @@ export const BottomDiv = styled.div`
 `;
 
 export const PokeItem = styled(Container)`
-overflow: scroll;
+    overflow: scroll;
 `;
 
 export const Item = styled.div`
 	flex: 1;
-	margin: 5px;
+	margin: 3px;
 	text-align: center;
 	font-size: 1.5em;
     font-family: Lato;
@@ -88,19 +88,20 @@ export const Item = styled.div`
 `;
 
 export const TituloCol = styled(Item)`
-color: #404040;
+    color: #404040;
 `;
 
 export const TituloLeft = styled(TituloCol)`
-text-align: left;
+    text-align: left;
 `;
 
 export const TituloRight = styled(TituloCol)`
-text-align: right;
+    text-align: right;
 `;
 
 export const TituloCenter = styled(TituloCol)`
-text-align: center;
+    margin-left: 32px;
+    text-align: center;
 `;
 
 
@@ -118,78 +119,78 @@ export const ItemCenter = styled(Item)`
 `;
 
 export const Img = styled.img`
-width: 87px;
-height: 87px;
-left: 297px;
-top: 245px;
+    width: 87px;
+    height: 87px;
+    left: 297px;
+    top: 245px;
 `;
 
 export const Texto = styled.div`
-text-align: left;
+    text-align: left;
 `;
 
 export const TextoRight = styled.div`
-text-align: right;
+    text-align: right;
 `;
 
 export const PokemonName = styled.div`
-text-align: left;
-font-family: Lato;
-font-style: normal;
-font-weight: bold;
-font-size: 18px;
-line-height: 125.2%;
+    text-align: left;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 125.2%;
 `;
 
 export const TextoTotal = styled(TextoRight)`
-font-family: Lato;
-font-style: normal;
-font-weight: bold;
-font-size: 18px;
-line-height: 125.2%;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 125.2%;
 `;
 
 export const TextoPreco = styled(TextoRight)`
-font-family: Lato;
-font-style: normal;
-font-weight: bold;
-font-size: 16px;
-line-height: 125.2%;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 125.2%;
 `;
 
 export const Input = styled.input`
-text-align: center;
-border-radius: 10px;
-border: 1px solid #292929;
-box-sizing: content-box;
-height: 30px;
-margin: 3px;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid #292929;
+    box-sizing: content-box;
+    height: 30px;
+    margin: 3px;
 `;
 
 export const Continuar = styled.button`
-width: 210px;
-height: 46px;
-left: 307px;
-top: 610px;
-border: 2px solid;
-box-sizing: border-box;
-border-radius: 5px;
-background-color: ${props => props.theme.buttonBg};
-color: ${props => props.theme.buttonFg};
-cursor: pointer;
+    width: 210px;
+    height: 46px;
+    left: 307px;
+    top: 610px;
+    border: 2px solid;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: ${props => props.theme.buttonBg};
+    color: ${props => props.theme.buttonFg};
+    cursor: pointer;
 `;
 
 export const Finalizar = styled.button`
-width: 210px;
-height: 46px;
-left: 307px;
-top: 610px;
-border: 2px solid;
-box-sizing: border-box;
-border-radius: 5px;
-background-color: ${props => props.theme.buttonBg};
-color: ${props => props.theme.buttonFg};
-cursor: pointer;
+    width: 210px;
+    height: 46px;
+    left: 307px;
+    top: 610px;
+    border: 2px solid;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: ${props => props.theme.buttonBg};
+    color: ${props => props.theme.buttonFg};
+    cursor: pointer;
 `;
 
 export const AddRemove = styled.button`

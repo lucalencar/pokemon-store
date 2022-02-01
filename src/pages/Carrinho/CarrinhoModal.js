@@ -1,4 +1,4 @@
-import * as S from './CarrinhoModal.style';
+import * as S from './components/CarrinhoModal.style';
 import CarrinhoIcon from '../../img/Carrinho.svg';
 
 export default function CarrinhoModal({closeModal}) {
