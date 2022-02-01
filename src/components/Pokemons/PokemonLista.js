@@ -40,7 +40,7 @@ useEffect(() => {
 // TELA CARREGAR MAIS
  return (
    <div className="app-contaner">
-     <div className="pokemon-container">
+     <S.Pokecontainer>
     
          {allPokemons.map( (pokemonStats, index) => 
            <PokemonThumb
@@ -54,7 +54,7 @@ useEffect(() => {
       
          <S.Load className="load-more" onClick={() => getAllPokemons()}>Carregar mais...</S.Load>
       
-     </div>
+     </S.Pokecontainer>
    
    </div>
  );

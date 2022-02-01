@@ -48,7 +48,7 @@ export const list = styled.div`
 
 
 export const Pokemon = styled.div`
-    margin: 100px 20px;
+    margin: 25px 20px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -94,6 +94,12 @@ export const Detalhes = styled.div`
     color:#4a4a4a;
     margin-left: 10px;
     cursor: pointer;
+
+`;
+
+export const Pokecontainer = styled.div`
+
+    margin-top: 106px;
 
 `;
 export const Load = styled.div`
