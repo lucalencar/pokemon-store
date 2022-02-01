@@ -4,6 +4,7 @@ import { useState } from "react";
 import CarrinhoModal from "./CarrinhoModal";
 import Titulos from "./components/Titulos";
 import ShopList from "./components/ShopList";
+import Navbar from '../../components/Header/Navbar';
 
 export default function Carrinho() {
 
@@ -13,6 +14,7 @@ export default function Carrinho() {
 
     return (
         <S.MainBox>
+            <Navbar />
             <S.CardBox>
                 <Titulos />
                 <S.Container />
