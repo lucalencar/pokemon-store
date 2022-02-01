@@ -19,12 +19,12 @@ function App() {
         <div>
          
           <Routes>
-          <Route path='/' element={<Login />} />
+          {/* <Route path='/' element={<Login />} />
             <Route path='/login' element={<Login />} />
             <Route path="/home" element={<Home />} />
             <Route path="/perfil" element={<Perfil />} />
             <Route path="/details" element={<Details />} />
-            <Route path="/carrinho" element={<Carrinho />} />
+            <Route path="/carrinho" element={<Carrinho />} /> */}
             
           </Routes>
           </div>
