@@ -7,11 +7,8 @@ export default function ShopItem() {
 
     const { counter, increase, decrease, subTotal } = useCounter();
 
-    const pokemonPreco = getPokePreco(1000, 5000);
+    const pokemonPreco = 10000;
 
-    function getPokePreco(min, max) {
-        return Math.random() * (max - min) + min;
-    }
 
     return (
         <div>

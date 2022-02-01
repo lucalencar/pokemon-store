@@ -54,7 +54,8 @@ export const Pokemon = styled.div`
     box-shadow: 5px 6px 10px rgb(0 0 0 / 10%);
     border-radius: 15px;
     width: 207px;
-    height: 315px;
+    /* height: 315px; */
+    height: 350px;
     margin-left: 73px;
 
 `;

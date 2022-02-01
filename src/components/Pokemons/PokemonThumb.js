@@ -1,7 +1,7 @@
 import React from 'react'
 import * as S from "./styles";
 //Puxando imagem, nome e tipo
-const PokemonThumb = ({ image, name, type }) => {
+const PokemonThumb = ({ image, name, type, price }) => {
     const style = type + " thumb-container";
     return (
         <S.list>   
