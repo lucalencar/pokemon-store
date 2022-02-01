@@ -1,11 +1,11 @@
 import React from 'react'
 import * as S from "./styles";
+//Puxando imagem, nome e tipo
 const PokemonThumb = ({ image, name, type }) => {
     const style = type + " thumb-container";
     return (
         <S.list>   
         <S.Pokemon>
-            {/* <div className="number"><small>#0{id}</small></div> */}
             <img src={image} alt={name} />
             <div className="detail-wrapper">
                 <h3 className="NomePokemon">{name}</h3>
