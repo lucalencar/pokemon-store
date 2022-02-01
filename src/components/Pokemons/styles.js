@@ -21,9 +21,11 @@ export const list = styled.div`
     transition: all 0.5s;
 
     &:hover{
-      transition: 2px;
+      
       -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
       filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+      -webkit-transform: scale(1.2);
+    transform: scale(1.2);
     }
   }
   
