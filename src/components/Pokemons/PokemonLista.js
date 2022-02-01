@@ -31,7 +31,7 @@ const PokemonList = (props) => {
 useEffect(() => {
  getAllPokemons()
 }, [])
-  // TELA CARREGAR MAIS
+// TELA CARREGAR MAIS
  return (
    <div className="app-contaner">
      <div className="pokemon-container">
