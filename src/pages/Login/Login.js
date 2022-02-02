@@ -4,15 +4,13 @@ import * as S from "./Login.style"
 import Background from '../../img/background.jpg'
 import { logDOM } from "@testing-library/react";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
-
 import React, { useState } from "react";
 
 
 export default function Login() {
-
-    const navigate = useNavigate();
+       const navigate = useNavigate();
   
-  const loginDefault = { email: "test@test.com", password: "123" };
+ const loginDefault = { email: "test@test.com", password: "123" };
   const [dados, setDados] = useState({ email: "", password: "" });
 
   const handleSubmit = (e) => {
@@ -20,7 +18,7 @@ export default function Login() {
       loginDefault.email === dados.email &&
       loginDefault.password === dados.password
     ) {
-      navigate("Home");
+      navigate("home");
     } else {
       alert("E-mail ou senha inválios.");
     }
@@ -31,10 +29,9 @@ export default function Login() {
     setDados({ ...dados, [name]: value });
   };
 
-
-    return (
-        
-        <div>
+return (
+         <div  onSubmit={handleSubmit}>
+            
             <S.Navbar>
             <img src={require('../../img/nome.png')}/>
             </S.Navbar>
@@ -48,9 +45,14 @@ export default function Login() {
            
             <label for="Password">Senha</label>
             <input type="password" placeholder="Digite sua senha" onChange={handleChange} />
-            <a>ESqueceu sua senha?</a>
+            
          <div>
-              <S.Button className="btn">GO!</S.Button>
+              <S.Button 
+              >Cadastro</S.Button>
+
+             <S.Button onClick={() =>navigate('../home',{replace: true})}
+              >Home</S.Button>
+              
          </div>
 
          </div>

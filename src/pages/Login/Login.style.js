@@ -82,3 +82,7 @@ export const Footer = styled.footer `
 align-items: center;
 justify-content: center;
 `
+
+export const Form = styled.input`
+  background-color: #fff;
+`
