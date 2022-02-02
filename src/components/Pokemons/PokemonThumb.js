@@ -1,8 +1,13 @@
 import React from 'react'
 import * as S from "./styles";
+import { useState } from 'react';
+
 //Puxando imagem, nome e tipo
 const PokemonThumb = ({ image, name, type, price }) => {
+
     const style = type + " thumb-container";
+
+
     return (
         <S.list>   
         <S.Pokemon>

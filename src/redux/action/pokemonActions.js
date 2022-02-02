@@ -25,7 +25,6 @@ import axios from "axios";
 
 export const GetPokemon = (pokemon) => async dispatch => {
 
-  
   try {
     dispatch({
       type: "POKEMON_MULTIPLE_LOADING"

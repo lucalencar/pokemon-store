@@ -105,6 +105,12 @@ export const Voltar = styled.button`
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
+
+    &:hover{
+      background: #CAC20C;
+      border-color: #CAC20C;
+      color: #202020;
+    }
 `;
 
 export const IconItem = styled.div`

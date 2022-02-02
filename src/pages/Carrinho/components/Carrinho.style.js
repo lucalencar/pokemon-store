@@ -173,11 +173,18 @@ export const Continuar = styled.button`
     left: 307px;
     top: 610px;
     border: 2px solid;
+    border-color: ${props => props.theme.buttonBgLight};
     box-sizing: border-box;
     border-radius: 5px;
-    background-color: ${props => props.theme.buttonBg};
-    color: ${props => props.theme.buttonFg};
+    background-color: ${props => props.theme.buttonBgLight};
+    color: ${props => props.theme.buttonFgLight};
     cursor: pointer;
+
+    &:hover{
+      background: #CAC20C;
+      border-color: #CAC20C;
+      color: #202020;
+    }
 `;
 
 export const Finalizar = styled.button`
@@ -186,11 +193,18 @@ export const Finalizar = styled.button`
     left: 307px;
     top: 610px;
     border: 2px solid;
+    border-color: ${props => props.theme.buttonBg};
     box-sizing: border-box;
     border-radius: 5px;
     background-color: ${props => props.theme.buttonBg};
     color: ${props => props.theme.buttonFg};
     cursor: pointer;
+
+    &:hover{
+      background: #CAC20C;
+      border-color: #CAC20C;
+      color: #202020;
+    }
 `;
 
 export const AddRemove = styled.button`

@@ -9,6 +9,8 @@ export default function useTheme() {
         foregroundLight: '#717171',
         buttonBg: '#292929',
         buttonFg: '#FFFFFF',
+        buttonBgLight: '#717171',
+        buttonFgLight: '#FFFFFF'
     }
 
     const [theme, setTheme] = useState(themeGlobal);
