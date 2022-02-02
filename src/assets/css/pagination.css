@@ -14,24 +14,25 @@
   width: 45px;
   height: 45px;
   border-radius: 0 !important;
-  background-color: #fbf9ff;
-  border-color: #f0e9ff;
-  color: #888888;
-  border: 1px solid #f0e9ff;
+  background-color: #fbff24;
+  border-color: #fbff24;
+  color: #ffffff;
+  border: 1px solid #fbff24;
   margin-right: 10px;
   cursor: pointer;
+  
 }
 
 .blog-pagination button, i,
 .blog-pagination li, span {
   font-size: 13px;
-  color: #888888;
+  color: #ffffff;
 }
 
 .blog-pagination .page-item.active li {
-  background-color: #fbf9ff;
-  border-color: #f0e9ff;
-  color: #888888;
+  background-color: #b3b619;
+  border-color: #b3b619;
+  color: #ffffff;
 }
 
 .blog-pagination .page-item:last-child li, button, a {
@@ -39,14 +40,14 @@
 }
 
 .pagination li a {
-    color: #888888;
+    color: #696969;
 }
 
 .pagination li a :hover{
-    color: #00CDAC;
+    color: #ffffff;
 }
 .pagination li.selected a{
-    background-color: #fbf9ff;
+    background-color: #a89e0b;
     border-color: #f0e9ff;
-    color: #00CDAC!important;
+    color: #ffffff!important;
 }

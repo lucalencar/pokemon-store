@@ -5,6 +5,7 @@ import _ from 'lodash'
 import { GetPokemonList } from '../../redux/action/pokemonActions'
 import Cards from '../../components/Cards';
 import ReactPaginate from 'react-paginate';
+import * as S from "./styles"
 
 import '../../assets/css/pagination.css'
 
@@ -39,16 +40,16 @@ const PokemonList = (props) => {
       return <p>{pokemonList.errorMsg}</p>
     }
 
-    return <p>unable to get data</p>
+    return <p>Não encontrado</p>
   };
 
   return(
     <Fragment>
       <div id='pokedex' className='courses-area section-padding40 fix'>
         <div className='container'>
-          <div className='row'>          
+          <S.Row>          
             {ShowData()}
-          </div>
+          </S.Row>
         {!_.isEmpty(pokemonList.data) && (        
           <div className='row justify-content-center'>
             <div className='col-xl-7 col-lg-8'>

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Card = styled.div`
-    margin: 100px 20px;
+    margin: 55px 20px;
     display: inline-grid;
     -webkit-box-pack: justify;
     justify-content: space-between;
@@ -11,9 +11,9 @@ export const Card = styled.div`
     box-shadow: 5px 6px 10px rgb(0 0 0 / 10%);
     border-radius: 15px;
     width: 207px;
-    height: 315px;
+    height: 343px;
     margin-left: 73px;
-
+    
     .ImgPokemon {
         width: 75%;
         height: 139px;
@@ -38,23 +38,65 @@ export const Card = styled.div`
 
   
   .NomePokemon{
-    color: #4a4a4a;
+    color: #717171;
     text-transform: uppercase;
-    text-align: center;
     font-family: Lato;
     font-style: normal;
+    margin-left: 15px;
     font-weight: bold;
     font-size: 18px;
-    line-height: 125.2%;
+    line-height: 55.2%;
+  }
+
+
+  .Detalhes{
+    font-family: Lato;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 125.2%;
+/* or 18px */
+
+
+color: #717171;
   }
 `;
 
 
 export const TipoPokemon = styled.div`
-font-family: Lato;
-font-style: normal;
-font-weight: 500;
-font-size: 14px;
-line-height: 125.2%;
-color: #717171;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 129.2%;
+    margin-left: 15px;
+    color: #717171;
+`;
+
+export const Button = styled.div`
+background: #717171;
+    position: absolute;
+    color: white;
+    height: 31px;
+    width: 190px;
+    text-align: center;
+    padding-top: 5px;
+    border-radius: 7px;
+    margin-top: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+
+    &:hover{
+      background: #CAC20C;
+    }
+`;
+
+export const Price = styled.div`
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 338.2%;
+    margin-left: 15px;
+    color: #717171;
 `;

@@ -41,9 +41,11 @@ const Cards = ( { url } ) => {
                                     <Badges key={item.id} {...item} />
                                 )}
                             </S.TipoPokemon>
-                            <Link to={`/pokemon/`} className='border-btn border-btn2'>
+                            <Link to={``} className='Detalhes'>
                                + Detalhes
                             </Link>
+                            <S.Price> R$1000,00</S.Price>
+                            <S.Button> Adicionar ao carrinho</S.Button>
                         </div>
                     </div>
                 </div>
