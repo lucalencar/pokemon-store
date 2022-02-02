@@ -7,12 +7,7 @@ import {Link} from 'react-router-dom'
 import * as S from "./styles";
 import './styles.css';
 
-const Details = () => {
-
-// function fecharModal() {
-//   document.getElementById('modal').style.top = "-100%";
-
-// }
+const Details = ({closeModal}) => {
 
 
   let dispatch = useDispatch()
@@ -30,11 +25,10 @@ const Details = () => {
       });
 
   return (
-    // <div class="bg-modal" id="modal">
-    // <div class="modal">
-
-    // <span class="close" onClick={fecharModal()}>&times;</span>
+    
       <S.Div>
+      
+        <S.CloseButton onClick={() => closeModal(false)}>X</S.CloseButton>
     <div className="detailContainer">
     <div className="detailContent centered">
       {
@@ -42,13 +36,14 @@ const Details = () => {
         <React.Fragment>
             <h6>{pokemonName}</h6>
         <img src={viewPoke.pokeUrlData.sprites.other.dream_world.front_default} alt="" width='110' height='110'/>
+
           <p>Habilidades</p>
         <div className="div-ability">
         <h4>{viewPoke.pokeUrlData.abilities[0].ability.name}</h4>
         <h4>{viewPoke.pokeUrlData.abilities[1].ability.name}</h4>
         </div>
 
-        <p>Tipo</p>
+        <p>Tipo primitivo</p>
         <h4>{viewPoke.pokeUrlData.types[0].type.name}</h4>
         <div className="sprite-div">
         
@@ -56,9 +51,10 @@ const Details = () => {
         <img src={viewPoke.pokeUrlData.sprites.front_default} alt="" width='70' height='70'/>
         <img src={viewPoke.pokeUrlData.sprites.back_default} alt="" width='70' height='70'/>
         <div>
+
        <S.Button >CART</S.Button>
-        
-       <Link to='/Home'>BACK</Link>
+       <S.Voltar onClick={() => closeModal(false)}>Voltar</S.Voltar>
+       {/* <Link to='/Home'>BACK</Link> */}
        </div>
           
         </div>  
@@ -67,12 +63,8 @@ const Details = () => {
           
         </div>
     </div> 
-      
     </S.Div>
-
-//     </div>
-
-// </div>  
+    
 
       
    )

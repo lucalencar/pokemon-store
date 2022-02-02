@@ -9,8 +9,6 @@ import Perfil from './pages/Perfil/Perfil.js';
 import {Provider} from "react-redux";
 import Store from "../src/redux/store";
 
-
-
 function App() {
   return (
       
@@ -23,7 +21,7 @@ function App() {
             <Route path='/' element={<Login />} />
             <Route path='/login' element={<Login />} />
             <Route path="/Home" element={<Home />} />
-            <Route path="/details/:url" element={<Details />} />
+            {/* <Route path="/details/:url" element={<Details />} /> */}
             
   
             {/* <Route path="/Perfil" element={<Perfil />} />

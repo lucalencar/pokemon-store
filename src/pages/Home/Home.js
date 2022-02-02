@@ -14,7 +14,7 @@ export default function Carrinho() {
         setLoading(true)
         setTimeout(() => {
             setLoading(false)
-        },1000) //mudar para 5000
+        },1000) //------------ALTERADO PARA OTIMIZACAO DE TESTE--------------
     },[])
 
     return (
@@ -30,7 +30,8 @@ export default function Carrinho() {
                 
                 :
 
-                <Header/>            
+                <Header/>
+               
             }
             
         </S.Container>
