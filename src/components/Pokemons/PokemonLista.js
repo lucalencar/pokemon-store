@@ -6,6 +6,7 @@ import { GetPokemonList } from '../../redux/action/pokemonActions'
 import Cards from '../../components/Cards';
 import ReactPaginate from 'react-paginate';
 import * as S from "./styles"
+import CarregarPoke from "../../../src/img/pokebola.gif";
 
 import '../../assets/css/pagination.css'
 
@@ -23,7 +24,12 @@ const PokemonList = (props) => {
 
   const ShowData = () => {
     if (pokemonList.loading) {
-      return <p>Loading...</p>
+      return <p>  
+      <img src={CarregarPoke} 
+      alt=""
+      className='PokeCarregar' 
+      
+      /> </p>
     }
 
     if (!_.isEmpty(pokemonList.data)) {
@@ -45,15 +51,14 @@ const PokemonList = (props) => {
 
   return(
     <Fragment>
-      <div id='pokedex' className='courses-area section-padding40 fix'>
-        <div className='container'>
-          <S.Row>          
+      <div id='pokedex'>
+        <div>
+          <S.Row>   
+         
             {ShowData()}
           </S.Row>
         {!_.isEmpty(pokemonList.data) && (        
-          <div className='row justify-content-center'>
-            <div className='col-xl-7 col-lg-8'>
-              <div className='section-tittle text-center mt-40'>
+          <div>
                 <nav className="blog-pagination justify-content-center d-flex">
                   <ReactPaginate
                     pageCount={Math.ceil(pokemonList.count / 15)}
@@ -65,8 +70,6 @@ const PokemonList = (props) => {
                     previousLabel='<'
                   />
                 </nav>
-              </div>
-            </div>
           </div>
         )}
         </div>
