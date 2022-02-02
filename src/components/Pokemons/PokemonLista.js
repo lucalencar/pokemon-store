@@ -46,21 +46,6 @@ const PokemonList = (props) => {
     <Fragment>
       <div id='pokedex' className='courses-area section-padding40 fix'>
         <div className='container'>
-          <div className='row justify-content-center'>
-            <div className='col-xl-7 col-lg-8'>
-              <div className='section-tittle text-center mb-55'>
-
-                <div className="row">
-                  <div className="col-sm-8">
-                    <input className='single-input' type='text' placeholder='Search pokemon name or id..' onChange={e => setSearch(e.target.value)} />      
-                  </div>
-                  <div className="col-sm-4">                  
-                    <button className='genric-btn primary' onClick={() => props.history.push(`/pokemon/${search}`)}>Search</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
           <div className='row'>          
             {ShowData()}
           </div>

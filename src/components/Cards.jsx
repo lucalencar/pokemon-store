@@ -2,7 +2,7 @@
 import React, { Fragment, useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import Badges from '../components/Badges'
-import '../assets/css/cards.css'
+import * as S from '../components/Pokemons/Cards.style'
 
 const Cards = ( { url } ) => {
     const imgURL = 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/';
@@ -24,30 +24,30 @@ const Cards = ( { url } ) => {
 
     return (
         <Fragment>
-            <div className="col-lg-3">
+            <S.Card>
                 <div className="properties properties2 mb-30">
                     <div className="properties__card">
                         <div className="properties__img overlay1">
                             <Link to={`/pokemon/`}>
-                                <img src={`${imgURL}${pokemon.id}${png}`} alt={pokemon.name} />
+                                <img src={`${imgURL}${pokemon.id}${png}`} className='ImgPokemon' alt={pokemon.name} />
                             </Link>
                         </div>
                         <div className="properties__caption">
-                            <h3 className="pokemon-name">
-                                <Link to={`/pokemon/`}>{pokemon.name}</Link>
+                            <h3 className="NomePokemon">
+                               {pokemon.name}
                             </h3>
-                            <p>#{zeroFill(`${pokemon.id}`, 3)}
+                            <S.TipoPokemon> Pokemon tipo 
                                 {pokemon.types.map(item =>
                                     <Badges key={item.id} {...item} />
                                 )}
-                            </p>
+                            </S.TipoPokemon>
                             <Link to={`/pokemon/`} className='border-btn border-btn2'>
                                + Detalhes
                             </Link>
                         </div>
                     </div>
                 </div>
-            </div>
+            </S.Card>
         </Fragment>
     );
 };
