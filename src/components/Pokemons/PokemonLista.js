@@ -59,7 +59,7 @@ const PokemonList = (props) => {
           </S.Row>
         {!_.isEmpty(pokemonList.data) && (        
           <div>
-                <nav className="blog-pagination justify-content-center d-flex">
+                <nav className="blog-pagination">
                   <ReactPaginate
                     pageCount={Math.ceil(pokemonList.count / 15)}
                     pageRangeDisplayed={2}
