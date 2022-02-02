@@ -1,36 +1,31 @@
 import React from "react";
-import { Routes, Route, BrowserRouter } from 'react-router-dom';
-import { GlobalStyle } from './styles/global.js';
-import Carrinho from './pages/Carrinho/Carrinho.js';
-import Details from './pages/Details/Details.js';
-import Home from './pages/Home/Home.js';
-import Login from './pages/Login/Login.js';
-import Perfil from './pages/Perfil/Perfil.js';
-import { ThemeProvider } from "styled-components";
-import useTheme from './hooks/useChangeTheme.js';
+import { Router, Route, Redirect, Switch } from "react-router-dom";
+import history from "./history";
+import GlobalStyle from "./globalStyles";
+import {
+  
+  ScrollArrow,
+  AdvancedSearch,
+  PokemonList,
+  PokemonListByType,
+} from "./Components";
 
-function App() {
-
-  const { theme } = useTheme();
-
-return (
-  <BrowserRouter basename="/">
-    <ThemeProvider theme={theme}>
+const App = () => {
+  return (
+    <div>
       <GlobalStyle />
-      <div>
-        <Routes>
-          <Route path='/' element={<Login />} />
-          <Route path='/login' element={<Login />} />
-          <Route path="/home" element={<Home />} />
-          <Route path="/perfil" element={<Perfil />} />
-          <Route path="/details" element={<Details />} />
-          <Route path="/carrinho" element={<Carrinho />} />
-        </Routes>
-      </div>
-    </ThemeProvider>
-  </BrowserRouter>
-);
-
-}
+      <Router history={history}>
+        {/* <Navbar history={history} /> */}
+        <ScrollArrow />
+        <AdvancedSearch history={history} />
+        <Switch>
+          <Route path="/home" exact component={PokemonList} />
+          <Route path="/type/:type" exact component={PokemonListByType} />
+          <Redirect to="/" />
+        </Switch>
+      </Router>
+    </div>
+  );
+};
 
 export default App;
