@@ -7,9 +7,9 @@ import { LOAD_POKE_REQUEST,
 export const loadPokeName = (pokemonName) =>{
     return async (dispatch) =>{
        try{
-           console.log('Olá, eu sou: '+ pokemonName)
+           console.log('teste do nome '+ pokemonName)
            dispatch({type: LOAD_POKE_REQUEST})
-           console.log('Hello, i am: '+ pokemonName)
+           console.log('teste2 '+ pokemonName)
            let dataURL = `https://pokeapi.co/api/v2/pokemon/${pokemonName}`
            let response = await Axios.get(dataURL)
            dispatch({type: LOAD_POKE_SUCCESS, payload: response.data})

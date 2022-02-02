@@ -63,7 +63,6 @@ export const Pokemon = styled.div`
     height: 315px;
     margin-left: 73px;
 
-
 `;
 
 export const ButtonDetails = styled.div`
@@ -91,13 +90,6 @@ background: #717171;
 `;
 
 
-/*export const Link = styled.link`
-
-    color:#4a4a4a;
-    margin-left: 10px;
-    cursor: pointer;
-
-`;*/
 export const Load = styled.div`
 
     color:#4a4a4a;

@@ -8,9 +8,7 @@ import Login from './pages/Login/Login.js';
 import Perfil from './pages/Perfil/Perfil.js';
 import {Provider} from "react-redux";
 import Store from "../src/redux/store";
-import Modal from './components/Modal/modal.component';
 
-// import { ModalProvider } from './hooks/modal.context';
 
 
 function App() {
@@ -18,7 +16,6 @@ function App() {
       
       <BrowserRouter basename="/">
         <Provider store={Store}>
-        {/* <ModalProvider> */}
         <GlobalStyle />
         <div>
          
@@ -34,7 +31,6 @@ function App() {
             
           </Routes>
           </div>
-       {/* </ModalProvider>    */}
        </Provider>
     </BrowserRouter>
   );

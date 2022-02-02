@@ -4,12 +4,17 @@ import { useDispatch, useSelector } from 'react-redux'
 import { loadPokeName } from '../../redux/action/pokemonActionsSingle'
 import { POKE_KEY } from '../../redux/reducers/PokemonDetailsReducer'
 import {Link} from 'react-router-dom'
-import Container from "../../components/Container/Container";
 import * as S from "./styles";
 import './styles.css';
-// import PokemonThumb from '../Pokemons/PokemonThumb';
 
 const Details = () => {
+
+// function fecharModal() {
+//   document.getElementById('modal').style.top = "-100%";
+
+// }
+
+
   let dispatch = useDispatch()
 
   let pokemonName = useParams().url
@@ -25,8 +30,11 @@ const Details = () => {
       });
 
   return (
-      // <Container title="Details">
-      <S.Div class="flex-container">
+    // <div class="bg-modal" id="modal">
+    // <div class="modal">
+
+    // <span class="close" onClick={fecharModal()}>&times;</span>
+      <S.Div>
     <div className="detailContainer">
     <div className="detailContent centered">
       {
@@ -41,25 +49,19 @@ const Details = () => {
         </div>
 
         <p>Tipo</p>
-        <h5>{viewPoke.pokeUrlData.types[0].type.name}</h5>
-        <div>
+        <h4>{viewPoke.pokeUrlData.types[0].type.name}</h4>
+        <div className="sprite-div">
         
           <p>Sprites</p>
         <img src={viewPoke.pokeUrlData.sprites.front_default} alt="" width='70' height='70'/>
         <img src={viewPoke.pokeUrlData.sprites.back_default} alt="" width='70' height='70'/>
         <div>
-       <p>Valor: </p>
-       <S.Button> Adicionar ao carrinho </S.Button>
-       </div>
-        </div>
-       <Link to='/Home' >
-         <h3>
-           <i className="b-back" ></i> 
-           BACK
-           </h3>
-           </Link>
+       <S.Button >CART</S.Button>
         
-       
+       <Link to='/Home'>BACK</Link>
+       </div>
+          
+        </div>  
         </React.Fragment>
       }
           
@@ -68,8 +70,9 @@ const Details = () => {
       
     </S.Div>
 
+//     </div>
 
-      // </Container>
+// </div>  
 
       
    )

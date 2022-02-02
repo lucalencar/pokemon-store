@@ -30,8 +30,7 @@ export default function Carrinho() {
                 
                 :
 
-                <Header/>
-               
+                <Header/>            
             }
             
         </S.Container>

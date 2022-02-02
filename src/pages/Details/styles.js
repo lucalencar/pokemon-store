@@ -1,10 +1,13 @@
 import styled from "styled-components";
 
 export const Div=styled.div`
-
-.flex-container{
-    display: flex;
-}
+width: 10%;
+flex-wrap: row;
+background-color: transparent;
+display: flex;
+flex-direction: row;
+padding: 5px 0;
+padding-left: 40%;
 
 .b-back{
     background-color:rgb(230, 149, 56);
@@ -15,16 +18,21 @@ export const Div=styled.div`
 
 
 .detailContent{
-
+    
     background-color: antiquewhite;
-    display: flex;
-    flex-direction: column;
+
     border: 5px solid beige;
     align-items: center;
 }
 .div-ability{
-    display: flexbox;
+  
 
+}
+
+
+
+img:hover{
+    transform: translateY(-5px);
 }
 
 .detailContent h6{
@@ -41,13 +49,14 @@ p{
     font-weight: bold;
 }`
 
+
 export const Button = styled.div`
 
 background: #717171;
-    position: absolute;
+    position: flex;
     color: white;
     height: 31px;
-    width: 190px;
+    width: 60px;
     text-align: center;
     padding-top: 5px;
     border-radius: 7px;
@@ -57,6 +66,26 @@ background: #717171;
 
     &:hover{
       background: #CAC20C;
+    }
+
+`;
+
+export const ButtonBack = styled.div`
+
+background: #717171;
+    position: flex;
+    color: white;
+    height: 31px;
+    width: 60px;
+    text-align: center;
+    padding-top: auto;
+    border-radius: 7px;
+    margin-top: -10px;
+    margin-left: 10px;
+    cursor: pointer;
+
+    &:hover{
+      background: red;
     }
 
 `;
