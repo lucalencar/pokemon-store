@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
 export const Div = styled.div`
-      position: absolute;
+    position: absolute;
     width: 365px;
     height: 310px;
-    left: 600px;
-    top: 229px;
+    left: 250px;
+    top: 250px;
     display: block;
-    flex-direction: column;
+    flex-direction: row;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
     border-radius: 20px;
     border-color: #d4d4d4;

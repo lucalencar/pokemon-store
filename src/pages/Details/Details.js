@@ -3,7 +3,6 @@ import { useParams } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import { loadPokeName } from '../../redux/action/pokemonActionsSingle'
 import { POKE_KEY } from '../../redux/reducers/PokemonDetailsReducer'
-import {Link} from 'react-router-dom'
 import * as S from "./styles";
 import './styles.css';
 
@@ -27,9 +26,8 @@ const Details = ({closeModal}) => {
   return (
     
       <S.Div>
-      
         <S.CloseButton onClick={() => closeModal(false)}>X</S.CloseButton>
-    <div className="detailContainer">
+    {/* <div className="detailContainer"> */}
     <div className="detailContent centered">
       {
         Object.keys(viewPoke.pokeUrlData).length === 0? null:
@@ -54,14 +52,13 @@ const Details = ({closeModal}) => {
 
        <S.Button >CART</S.Button>
        <S.Voltar onClick={() => closeModal(false)}>Voltar</S.Voltar>
-       {/* <Link to='/Home'>BACK</Link> */}
        </div>
           
         </div>  
         </React.Fragment>
       }
           
-        </div>
+        {/* </div> */}
     </div> 
     </S.Div>
     
