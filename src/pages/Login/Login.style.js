@@ -14,19 +14,17 @@ export const Formulario = styled.form`
 
 export const Button = styled.button`
    color: black;
-   
    border-radius: 8px;
+   
 `
 
 export const Container = styled.body`
-
 background-size: cover;
 opacity: 85%;
-
 `
 export const Login = styled.h1`
 border: 10px solid #000;
-font-size: 170%;
+font-size: 180%;
 width: 320px;
 height: 415px;
 border-radius:80px 0px 80px 0px;
@@ -37,9 +35,9 @@ position: absolute;
 transform: translate(-555, -50%);
 box-sizing: border-box;
 padding: 35px 25px;
-color: #fff;
+color: #FFff00;
 background-color: black;
-opacity:78%;
+opacity:88%;
 
 h3{
    font-size: 95%;
@@ -49,37 +47,28 @@ h3{
 }
 `
 
-
-export const Nav = styled.nav`
-background-color: black;
-color: #fff;
-display: flex;
-padding: 1%;
-`
-
 export const Navbar = styled.header`
- background-color: black; 
- padding: 3%;
- color: #fff;
+ background-color: #1C1C1C; 
+ padding: 0.5%;
+ color: black;
  display: flex;
-align-items: center;
-justify-content: center;
+ align-items: center;
+ justify-content: center;
 
 `
 export const Imagem = styled.img`
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;    
+  width: 100%;  
+  
 `
 
 export const Footer = styled.footer`
- background-color: black;
- padding: 3%;
- align-items: center;
- justify-content:center;
+ background-color: #1C1C1C; 
+ padding: 1rem;
  color: #fff;
- margin: 5%;
- height: 100%;
  display: flex;
- position: relative;
+align-items: center;
+justify-content: center;
 `
+
