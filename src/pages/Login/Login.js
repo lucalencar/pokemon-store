@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { useHref, useNavigate } from "react-router-dom";
 import styled from 'styled-components'
 import * as S from "./Login.style"
 import Background from '../../img/background.jpg'
@@ -35,29 +35,28 @@ export default function Login() {
     return (
         
         <div>
-            
             <S.Navbar>
-            
             <img src={require('../../img/nome.png')}/>
-            
             </S.Navbar>
              
             <S.Login>
                 <h3>Login</h3>
+
         <div>
             <label for="Login">E-mail</label>
             <input type="text" placeholder="Digite um email" onChange={handleChange}/>
            
             <label for="Password">Senha</label>
             <input type="password" placeholder="Digite sua senha" onChange={handleChange} />
-            <div>
-             <S.Button>Entrar</S.Button>
+            <a>ESqueceu sua senha?</a>
+         <div>
+              <S.Button className="btn">GO!</S.Button>
          </div>
+
          </div>
             </S.Login>
 
-        
-            <S.Imagem src={Background}/>
+        <S.Imagem src={Background}/>
         <div>
             <S.Footer> &#169;  Pokemon
            <ul>
