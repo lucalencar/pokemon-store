@@ -61,7 +61,7 @@ const PokemonList = (props) => {
           <div>
                 <nav className="blog-pagination">
                   <ReactPaginate
-                    pageCount={Math.ceil(pokemonList.count / 15)}
+                    pageCount={Math.ceil(pokemonList.count / 16)}
                     pageRangeDisplayed={2}
                     marginPagesDisplayed={1}
                     onPageChange={(data) => FetchData(data.selected + 1)}
