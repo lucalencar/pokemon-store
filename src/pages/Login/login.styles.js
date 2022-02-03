@@ -62,7 +62,7 @@ export const Button = styled.button`
     margin-top: 20px;
     cursor: pointer;
     &:hover{
-        background: #881414;;
+        background: #881414;
     }
 `;
 

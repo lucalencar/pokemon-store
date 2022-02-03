@@ -1,19 +1,20 @@
 import { useNavigate } from "react-router-dom";
 import * as S from "./Perfil.styles";
-import background from "../../img/backgroundPerfil.png";
+import Fundo from "../../img/FundoPerfil.jpeg"
 import photo from "../../img/photoAsh.jpg";
-
+import Navbar from '../../components/Header/Navbar';
 
 
 
 export default function Perfil() {
 
     const navigate = useNavigate();
-
     return (
-
+       <>
+          <Navbar />
+          <S.Img src={Fundo} className="ImgFundo" />
+       
         <S.container>
-            
 
             <S.FormDiv>
                 
@@ -23,10 +24,11 @@ export default function Perfil() {
             
            
             <S.Form>
+            <h1 className="perfil">Meu Perfil</h1>
             <img src={photo} className="photo"/>
            
                            
-                    <h1 className="perfil">Meu Perfil</h1> 
+                     
                     
                     
                     <S.Label>Nome Completo</S.Label>
@@ -35,14 +37,14 @@ export default function Perfil() {
 
             
                     <S.Label>Gênero</S.Label>
-                    <select className="genero">
+                    <select className="Genero">
                         <option value="">Feminino</option>
                         <option value="">Masculino</option>
                         <option value="">Prefiro não dizer</option>
                     </select>
 
                     <S.Label>Origem</S.Label>
-                    <select name="paises">
+                    <select className="Paises">
                         <option value="">Japão</option>
                         <option value="">Brazil</option>
                     </select>
@@ -50,8 +52,8 @@ export default function Perfil() {
                     <S.Label>Level</S.Label>
                     <S.Input type="nome" name="nome"/>
                     
-                    <S.Button> Salvar </S.Button>
-                    <S.Button> Cancelar </S.Button>
+                    <S.ButtonSalvar> Salvar </S.ButtonSalvar>
+                    <S.ButtonCancelar> Cancelar </S.ButtonCancelar>
 
               
                     
@@ -62,7 +64,7 @@ export default function Perfil() {
             </S.FormDiv>
 
         </S.container>
-
+        </>
     );
 
 }

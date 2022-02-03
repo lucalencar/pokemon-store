@@ -1,5 +1,6 @@
 import axios from "axios"
 
+
 export const GetPokemonList = (page) => async dispatch => {
   try {
     dispatch({
@@ -41,3 +42,4 @@ export const GetPokemon = (pokemon) => async dispatch => {
     })
   }
 };
+
