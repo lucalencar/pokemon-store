@@ -24,6 +24,8 @@ function Header() {
      
 
         <PokemonList />
+
+        
       
         </>
     )
