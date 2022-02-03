@@ -134,20 +134,22 @@ export const ButtonSalvar = styled.button`
 export const ButtonCancelar = styled.button`
 
     padding: 5px 5px;
-    color: rgb(253,249,243);
     font-weight: 600;
     text-transform: uppercase;
     width: 121px;
     height: 34px;
-    background: #d50e0e;
-    border: none;
     border-radius: 5px;
     cursor: pointer;
+    background: white;
+    border: 1px solid;
+    border-color: red;
     position: relative;
     margin-left: 116px;
+    color: red;
     margin-top: -34px;
     &:hover{
-      background: #9b1111;
+      color: #9b1111;
+      border-color: #9b1111;
     }
     
 `;
