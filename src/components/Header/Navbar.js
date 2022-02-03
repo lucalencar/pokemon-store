@@ -3,9 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { AiOutlineUser, AiOutlineLogout, AiOutlineShoppingCart } from "react-icons/ai";
 import Logo from "../../../src/img/Logo.svg";
 
-
 export default function Navbar() {
-
 
     const navigate = useNavigate();
 

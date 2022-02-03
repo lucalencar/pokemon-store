@@ -23,7 +23,6 @@ return (
           <Route path='/login' element={<Login />} />
           <Route path="/home" element={<Home />} />
           <Route path="/perfil" element={<Perfil />} />
-          <Route path="/details" element={<Details />} />
           <Route path="/carrinho" element={<Carrinho />} />
         </Routes>
       </div>

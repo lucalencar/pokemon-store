@@ -1,11 +1,13 @@
 import TYPES from "../types/types";
 
 const INITIAL_STATE = {
-  items: [{
-    id: 1,
-    name: "pikachu",
-    price: 0,
-  }],
+  // items: [{
+  //   id: 0,
+  //   name: "",
+  //   price: 0,
+  //   image: '',
+  // }],
+  items: []
 };
 
 const CartReducer = (state = INITIAL_STATE, action) => {
