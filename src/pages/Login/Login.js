@@ -3,8 +3,7 @@ import React, { useState } from "react";
 import * as S from "./login.styles";
 import Fundo from "../../img/backgroundLogin.jpg"
 import logo from "../../img/Logo.svg"
-import { useFormik } from "formik";
-import * as yup from "yup";
+
 
 export default function Login() {
 
@@ -31,22 +30,6 @@ export default function Login() {
 
 
   
-  const schema = yup.object({
-    email: yup.string().required("E-mail obrigatorio!").max(30),
-    password: yup.string().required("Senha obrigatorio!").max(3),
-  });
-
-  const formik = useFormik({
-    initialValues: {
-      email: "",
-      password: "",
-    },
-    validationSchema: schema,
-    onSubmit: (values) => {
-      console.log("SUBMIT", values);
-    }
-  });
-
 
   return (
     <div title="Login">
@@ -54,7 +37,7 @@ export default function Login() {
         <img src={logo}  className="Logo"/>
       <S.Titulo> Faça seu login </S.Titulo>
           <img src={Fundo} className="ImgFundo" />
-        <S.Form onSubmit={formik.handleSubmit}>
+        <S.Form onSubmit={handleSubmit}>
           <S.Label>E-mail</S.Label>
           <S.Input type="email" name="email" onChange={handleChange} placeholder="Digite seu e-mail"
           

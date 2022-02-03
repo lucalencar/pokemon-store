@@ -1,10 +1,12 @@
 
-import React, { Fragment, useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
-import Badges from '../components/Badges'
-import * as S from '../components/Pokemons/Cards.style'
-
+import React, { Fragment, useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
+import Badges from '../components/Badges';
+import * as S from '../components/Pokemons/Cards.style';
+import Modal from '../components/Modal/Modal';
 const Cards = ( { url } ) => {
+    const [modalOpen, setModalOpen] = useState(false);
+
     const imgURL = 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/';
     const png = '.png';
     const [ pokemon, setPokemon ] = useState({ types: [] });
@@ -25,6 +27,7 @@ const Cards = ( { url } ) => {
     return (
         <Fragment>
             <S.Card>
+          
                 <div className="properties properties2 mb-30">
                     <div className="properties__card">
                         <div className="properties__img overlay1">
@@ -41,9 +44,17 @@ const Cards = ( { url } ) => {
                                     <Badges key={item.id} {...item} />
                                 )}
                             </S.TipoPokemon>
-                            <Link to={``} className='Detalhes'>
-                               + Detalhes
-                            </Link>
+                            <button
+                            className="openModalBtn"
+                            onClick={() => {
+                            setModalOpen(true);
+                            }}
+                        >
+                             + Detalhes
+                            </button>
+
+                        {modalOpen && <Modal setOpenModal={setModalOpen} />}
+
                             <S.Price> R$1000,00</S.Price>
                             <S.Button> Adicionar ao carrinho</S.Button>
                         </div>
@@ -55,3 +66,4 @@ const Cards = ( { url } ) => {
 };
 
 export default Cards;
+

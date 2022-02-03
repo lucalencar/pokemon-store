@@ -19,6 +19,9 @@ export const FormDiv = styled.div`
     right: 285px;
     top: 52px;
   }
+
+ 
+
 `;
 
 export const Form = styled.form`
@@ -27,7 +30,7 @@ export const Form = styled.form`
   width: 300px;
   margin-left: 154px;
   position: relative;
-  
+
 `;
 
 export const Label = styled.label`
@@ -49,6 +52,7 @@ export const Input = styled.input`
     border: 1px solid red;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.15), 0 1px 5px rgba(0, 0, 0, 0.1);
   }
+
 `;
 
 export const Button = styled.button`
@@ -64,6 +68,8 @@ export const Button = styled.button`
     &:hover{
         background: #881414;
     }
+  
+  
 `;
 
 export const Titulo = styled.h4`
@@ -77,4 +83,13 @@ export const Titulo = styled.h4`
     font-size: 35px;
     line-height: 42px;
     color: #292929;
+
+
 `;
+
+export const ErrorTip = styled.p`
+  color: red;
+  font-size: 12px;
+  margin-top: -4px;
+`;
+

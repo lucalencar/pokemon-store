@@ -75,7 +75,7 @@ export const TipoPokemon = styled.div`
 
 export const Button = styled.div`
 background: #717171;
-    position: absolute;
+    /* position: absolute; */
     color: white;
     height: 31px;
     width: 190px;
