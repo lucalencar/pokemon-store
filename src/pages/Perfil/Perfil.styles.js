@@ -25,6 +25,11 @@ export const Img =styled.img`
     height: 123%;
     margin-top: 71px;
 
+    @media (max-width: 425px) {
+    width: 210%;
+    height: 166%;
+  }
+
 `;
 
 
@@ -39,6 +44,9 @@ background:white;
 border-radius:20px;
 position: absolute;
 margin-top: 151px;
+@media (max-width: 425px) {
+    margin-left: 337px;
+  }
 `;
 
 
@@ -129,6 +137,9 @@ export const ButtonSalvar = styled.button`
     &:hover{
       background: #9b1111;
     }
+    @media (max-width: 414px) {
+      color: black;
+  }
   
 `;
 export const ButtonCancelar = styled.button`
