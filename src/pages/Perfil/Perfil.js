@@ -1,5 +1,8 @@
 import { useNavigate } from "react-router-dom";
 import * as S from "./Perfil.styles";
+import background from "../../img/backgroundPerfil.png";
+import photo from "../../img/photoAsh.jpg";
+
 
 
 
@@ -10,20 +13,29 @@ export default function Perfil() {
     return (
 
         <S.container>
+            
 
             <S.FormDiv>
+                
+                
             <S.caixadetexto>
+                
+            
+           
             <S.Form>
+            <img src={photo} className="photo"/>
            
                            
-                    <h1>Meu Perfil</h1>
-                    <img></img>
+                    <h1 className="perfil">Meu Perfil</h1> 
+                    
+                    
                     <S.Label>Nome Completo</S.Label>
                     <S.Input type="nome" name="nome"/>
+                    
 
             
                     <S.Label>Gênero</S.Label>
-                    <select name="genero">
+                    <select className="genero">
                         <option value="">Feminino</option>
                         <option value="">Masculino</option>
                         <option value="">Prefiro não dizer</option>
