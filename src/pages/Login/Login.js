@@ -1,13 +1,11 @@
-import { useHref, useNavigate } from "react-router-dom";
-import styled from 'styled-components'
-import * as S from "./Login.style"
-import Background from '../../img/background.jpg'
-import { logDOM } from "@testing-library/react";
-import { FaFacebook, FaInstagram } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 import React, { useState } from "react";
-
+import * as S from "./Login.styles.js"
+import Fundo from '../../img/backgroundLogin.jpg'
+import logo from "../../img/Logo.png";
 
 export default function Login() {
+
        const navigate = useNavigate();
   
  const loginDefault = { email: "test@test.com", password: "123" };
@@ -20,7 +18,7 @@ export default function Login() {
     ) {
       navigate("home");
     } else {
-      alert("E-mail ou senha inválios.");
+      alert("E-mail ou senha inválidos.");
     }
   };
 
@@ -30,44 +28,25 @@ export default function Login() {
   };
 
 return (
-         <div  onSubmit={handleSubmit}>
+         <div  title="Login">
             
-            <S.Navbar>
-            <img src={require('../../img/nome.png')}/>
-            </S.Navbar>
-             
-            <S.Login>
-                <h3>Login</h3>
+            <S.FormDiv>
 
-        <div>
-            <label for="Login">E-mail</label>
-            <input type="text" placeholder="Digite um email" onChange={handleChange}/>
-           
-            <label for="Password">Senha</label>
-            <input type="password" placeholder="Digite sua senha" onChange={handleChange} />
-            
-         <div>
-              <S.Button 
-              >Cadastro</S.Button>
+             <img src={logo} className="Logo"/>
+             <S.Titulo>Login </S.Titulo>
+               <img src={Fundo} className="ImgFundo"/>
+               <S.Form onSubmit={handleSubmit}>
+               <S.Label>E-mail</S.Label>
+               <S.Input type="email" name="email" onChange={handleChange}
+               placeholder="Digite seu e-mail"/>
 
-             <S.Button onClick={() =>navigate('../home',{replace: true})}
-              >Home</S.Button>
-              
-         </div>
+               <S.Label>Senha</S.Label>
+               <S.Input type="password" name="password" onChange={handleChange}
+               placeholder="Digite sua senha"/>
 
-         </div>
-            </S.Login>
-
-        <S.Imagem src={Background}/>
-        <div>
-            <S.Footer> &#169;  Pokemon
-           <ul>
-               <li><FaFacebook/> Facebook</li>
-               <li><FaInstagram/> Instagram</li>
-           </ul>
-            </S.Footer>
-           
-        </div>
-        </div>
+               <S.Button>Entrar</S.Button>
+              </S.Form>
+            </S.FormDiv>
+       </div>
     );
-    }
+ }
