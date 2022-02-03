@@ -88,7 +88,7 @@ width: 200px;
 `;
 
 export const Label = styled.label`
-    padding: 10px 4px;
+    padding: 4px 4px;
 
   
 `;
@@ -151,3 +151,10 @@ export const ButtonCancelar = styled.button`
     }
     
 `;
+
+export const ErrorTip = styled.p`
+  color: red;
+  font-size: 12px;
+  margin-top: -4px;
+`;
+
