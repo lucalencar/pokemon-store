@@ -1,0 +1,188 @@
+.badge{
+    margin-left: 5px;
+    margin-right: 5px;
+    text-transform: capitalize;
+    font-size: 15px;
+}
+
+.badge-grass{
+    color: #fff!important;
+
+    margin-right: 5px;
+    background: -webkit-linear-gradient(180deg, #9bcc50 50%, #9bcc50 50%);
+    background: -ms-linear-gradient(180deg, #9bcc50 50%, #9bcc50 50%);
+    background: -moz-linear-gradient(180deg, #9bcc50 50%, #9bcc50 50%);
+    background: -o-linear-gradient(180deg, #9bcc50 50%, #9bcc50 50%);
+    background: linear-gradient(180deg, #9bcc50 50%, #9bcc50 50%);
+    background-color: #9bcc5070;
+}
+
+.badge-poison{
+    background: -webkit-linear-gradient(180deg, #b97fc9 50%, #b97fc9 50%);
+    background: -ms-linear-gradient(180deg, #b97fc9 50%, #b97fc9 50%);
+    background: -moz-linear-gradient(180deg, #b97fc9 50%, #b97fc9 50%);
+    background: -o-linear-gradient(180deg, #b97fc9 50%, #b97fc9 50%);
+    background: linear-gradient(180deg, #b97fc9 50%, #b97fc9 50%);
+    background-color: #b97fc980;
+    color: #fff!important;
+}
+
+.badge-fire{
+    background: -webkit-linear-gradient(180deg, #fd7d24 50%, #fd7d24 50%);
+    background: -ms-linear-gradient(180deg, #fd7d24 50%, #fd7d24 50%);
+    background: -moz-linear-gradient(180deg, #fd7d24 50%, #fd7d24 50%);
+    background: -o-linear-gradient(180deg, #fd7d24 50%, #fd7d24 50%);
+    background: linear-gradient(180deg, #fd7d24 50%, #fd7d24 50%);
+    background-color: #fd7e2460;
+    color: #fff!important;
+}
+
+.badge-bug{
+    background: -webkit-linear-gradient(180deg, #729f3f 50%, #729f3f 50%);
+    background: -ms-linear-gradient(180deg, #729f3f 50%, #729f3f 50%);
+    background: -moz-linear-gradient(180deg, #729f3f 50%, #729f3f 50%);
+    background: -o-linear-gradient(180deg, #729f3f 50%, #729f3f 50%);
+    background: linear-gradient(180deg, #729f3f 50%, #729f3f 50%);
+    background-color: #729f3f4f;
+    color: #fff!important;
+}
+
+.badge-dragon {
+    background: -webkit-linear-gradient(180deg, #53a4cf 50%, #f16e57 50%);
+    background: -ms-linear-gradient(180deg, #53a4cf 50%, #f16e57 50%);
+    background: -moz-linear-gradient(180deg, #53a4cf 50%, #f16e57 50%);
+    background: -o-linear-gradient(180deg, #53a4cf 50%, #f16e57 50%);
+    background: linear-gradient(180deg, #53a4cf 50%, #f16e57 50%);
+    background-color: #53a4cf69;
+    color: #fff!important;
+}
+
+.badge-fairy{
+    background: -webkit-linear-gradient(180deg, #fdb9e9 50%, #fdb9e9 50%);
+    background: -ms-linear-gradient(180deg, #fdb9e9 50%, #fdb9e9 50%);
+    background: -moz-linear-gradient(180deg, #fdb9e9 50%, #fdb9e9 50%);
+    background: -o-linear-gradient(180deg, #fdb9e9 50%, #fdb9e9 50%);
+    background: linear-gradient(180deg, #fdb9e9 50%, #fdb9e9 50%);
+    background-color: #fdb9e96c;
+    color: #fff!important;
+}
+
+.badge-ghost{
+    background: -webkit-linear-gradient(180deg, #7b62a3 50%, #7b62a3 50%);
+    background: -ms-linear-gradient(180deg, #7b62a3 50%, #7b62a3 50%);
+    background: -moz-linear-gradient(180deg, #7b62a3 50%, #7b62a3 50%);
+    background: -o-linear-gradient(180deg, #7b62a3 50%, #7b62a3 50%);
+    background: linear-gradient(180deg, #7b62a3 50%, #7b62a3 50%);
+    background-color: #7b62a369;
+    color: #fff!important;
+}
+
+.badge-ground{
+    background: -webkit-linear-gradient(180deg, #f7de3f 50%, #ab9842 50%);
+    background: -ms-linear-gradient(180deg, #f7de3f 50%, #ab9842 50%);
+    background: -moz-linear-gradient(180deg, #f7de3f 50%, #ab9842 50%);
+    background: -o-linear-gradient(180deg, #f7de3f 50%, #ab9842 50%);
+    background: linear-gradient(180deg, #f7de3f 50%, #ab9842 50%);
+    background-color: #f7df3f6b;
+    color: #fff!important;
+}
+
+.badge-normal{
+    background: -webkit-linear-gradient(180deg, #a4acaf 50%, #a4acaf 50%);
+    background: -ms-linear-gradient(180deg, #a4acaf 50%, #a4acaf 50%);
+    background: -moz-linear-gradient(180deg, #a4acaf 50%, #a4acaf 50%);
+    background: -o-linear-gradient(180deg, #a4acaf 50%, #a4acaf 50%);
+    background: linear-gradient(180deg, #a4acaf 50%, #a4acaf 50%);
+    background-color: #a4acaf70;
+    color: #fff!important;
+}
+
+.badge-psychic{
+    background: -webkit-linear-gradient(180deg, #f366b9 50%, #f366b9 50%);
+    background: -ms-linear-gradient(180deg, #f366b9 50%, #f366b9 50%);
+    background: -moz-linear-gradient(180deg, #f366b9 50%, #f366b9 50%);
+    background: -o-linear-gradient(180deg, #f366b9 50%, #f366b9 50%);
+    background: linear-gradient(180deg, #f366b9 50%, #f366b9 50%);
+    background-color: #f366b860;
+    color: #fff!important;
+}
+
+.badge-steel{
+    background: -webkit-linear-gradient(180deg, #9eb7b8 50%, #9eb7b8 50%);
+    background: -ms-linear-gradient(180deg, #9eb7b8 50%, #9eb7b8 50%);
+    background: -moz-linear-gradient(180deg, #9eb7b8 50%, #9eb7b8 50%);
+    background: -o-linear-gradient(180deg, #9eb7b8 50%, #9eb7b8 50%);
+    background: linear-gradient(180deg, #9eb7b8 50%, #9eb7b8 50%);
+    background-color: #9eb7b880;
+    color: #212121!important;
+}
+
+.badge-dark{
+    background: -webkit-linear-gradient(180deg, #212121 50%, #212121 50%);
+    background: -ms-linear-gradient(180deg, #212121 50%, #212121 50%);
+    background: -moz-linear-gradient(180deg, #212121 50%, #212121 50%);
+    background: -o-linear-gradient(180deg, #212121 50%, #212121 50%);
+    background: linear-gradient(180deg, #212121 50%, #212121 50%);
+    background-color: #2121218a;
+    color: #fff!important;
+}
+
+.badge-electric{
+    background: -webkit-linear-gradient(180deg, #eed535 50%, #eed535 50%);
+    background: -ms-linear-gradient(180deg, #eed535 50%, #eed535 50%);
+    background: -moz-linear-gradient(180deg, #eed535 50%, #eed535 50%);
+    background: -o-linear-gradient(180deg, #eed535 50%, #eed535 50%);
+    background: linear-gradient(180deg, #eed535 50%, #eed535 50%);
+    background-color: #eed53575;
+    color: #fff!important;
+}
+
+.badge-flying{
+    background: -webkit-linear-gradient(180deg, #3dc7ef 50%, #bdb9b8 50%);
+    background: -ms-linear-gradient(180deg, #3dc7ef 50%, #bdb9b8 50%);
+    background: -moz-linear-gradient(180deg, #3dc7ef 50%, #bdb9b8 50%);
+    background: -o-linear-gradient(180deg, #3dc7ef 50%, #bdb9b8 50%);
+    background: linear-gradient(180deg, #3dc7ef 50%, #bdb9b8 50%);
+    background-color: #3dc8ef63;
+    color: #fff!important;
+}
+
+.badge-ice{
+    background: -webkit-linear-gradient(180deg, #51c4e7 50%, #51c4e7 50%);
+    background: -ms-linear-gradient(180deg, #51c4e7 50%, #51c4e7 50%);
+    background: -moz-linear-gradient(180deg, #51c4e7 50%, #51c4e7 50%);
+    background: -o-linear-gradient(180deg, #51c4e7 50%, #51c4e7 50%);
+    background: linear-gradient(180deg, #51c4e7 50%, #51c4e7 50%);
+    background-color: #51c4e767;
+    color: #fff!important;
+}
+
+.badge-rock{
+    background: -webkit-linear-gradient(180deg, #a38c21 50%, #a38c21 50%);
+    background: -ms-linear-gradient(180deg, #a38c21 50%, #a38c21 50%);
+    background: -moz-linear-gradient(180deg, #a38c21 50%, #a38c21 50%);
+    background: -o-linear-gradient(180deg, #a38c21 50%, #a38c21 50%);
+    background: linear-gradient(180deg, #a38c21 50%, #a38c21 50%);
+    background-color: #a38b2167;
+    color: #fff!important;
+}
+
+.badge-water{
+    background: -webkit-linear-gradient(180deg, #4592c4 50%, #4592c4 50%);
+    background: -ms-linear-gradient(180deg, #4592c4 50%, #4592c4 50%);
+    background: -moz-linear-gradient(180deg, #4592c4 50%, #4592c4 50%);
+    background: -o-linear-gradient(180deg, #4592c4 50%, #4592c4 50%);
+    background: linear-gradient(180deg, #4592c4 50%, #4592c4 50%);
+    background-color: #4591c46b;
+    color: #fff!important;
+}
+
+.badge-fighting{
+    background: -webkit-linear-gradient(180deg, #d56723 50%, #d56723 50%);
+    background: -ms-linear-gradient(180deg, #d56723 50%, #d56723 50%);
+    background: -moz-linear-gradient(180deg, #d56723 50%, #d56723 50%);
+    background: -o-linear-gradient(180deg, #d56723 50%, #d56723 50%);
+    background: linear-gradient(180deg, #d56723 50%, #d56723 50%);
+    background-color: #d5672371;
+    color: #fff!important;
+}

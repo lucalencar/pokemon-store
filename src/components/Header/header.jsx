@@ -13,14 +13,36 @@ function Header() {
 
     return (
         <>
-            <Navbar />
+        <S.Nav>
+            <S.Image> 
+            <Link to='/Home'>
+                <img src={Logo} alt="" className="LogoPokemon"/> 
+                </Link>
+             </S.Image>
+            <S.Button> 
+                <S.Contador>  0   </S.Contador>
+                <Link to='/Carrinho'>
+                <AiOutlineShoppingCart className="IconeShop" size={25} /> 
+                </Link>
+            </S.Button>
+            <S.Button> 
+            <Link to='/Perfil'>
+                <AiOutlineUser className="IconeUser" size={25} /> 
+                </Link>
+             </S.Button>
+            <S.Button> 
+            <Link to='/'>
+                <AiOutlineLogout className="IconeLogOut" size={25} /> 
+                </Link>
+                </S.Button>
+        </S.Nav>
 
             <Music />
 
-            <PokemonList />
-
+        <PokemonList />
+      
         </>
     )
-}
+ }
 
-export default Header;
+ export default Header;
