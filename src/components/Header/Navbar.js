@@ -12,13 +12,13 @@ export default function Navbar() {
 
     return (
         <S.Nav>
-        <S.Image> <img src={Logo} alt="" className="LogoPokemon" />  </S.Image>
+        <S.Image onClick={() => navigate('../home', { replace: true })}> <img src={Logo} alt="" className="LogoPokemon" />  </S.Image>
         <S.Button>
             <S.Contador> {cartList.total} </S.Contador>
             <AiOutlineShoppingCart className="IconeShop" size={25} onClick={() => navigate('../carrinho', { replace: true })} />
         </S.Button>
-        <S.Button> <AiOutlineUser className="IconeUser" size={25} /> </S.Button>
-        <S.Button> <AiOutlineLogout className="IconeLogOut" size={25} /> </S.Button>
+        <S.Button onClick={() => navigate('../perfil', { replace: true })}> <AiOutlineUser className="IconeUser" size={25} /> </S.Button>
+        <S.Button onClick={() => navigate('../login', { replace: true })}> <AiOutlineLogout className="IconeLogOut" size={25} /> </S.Button>
     </S.Nav>
     )
 }
