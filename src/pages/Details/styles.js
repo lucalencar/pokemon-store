@@ -1,39 +1,69 @@
 import styled from "styled-components";
 
 export const Div = styled.div`
-    position: absolute;
+  /* position: fixed;
+  z-index: 1300;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center; */
+  display: flex;
+  justify-content: center;
+    /* position: fixed;
     width: 365px;
     height: 310px;
-    left: 250px;
+    left: 150px;
     top: 250px;
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: antiquewhite;
     flex-direction: row;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
     border-radius: 20px;
     border-color: #d4d4d4;
     border-style: solid;
+    justify-content: safe;
+    align-items: stretch; */
 
   .b-back {
     background-color: rgb(230, 149, 56);
     cursor: pointer;
     margin-top: auto;
     margin-left: 10%;
+    z-index: 1300;
   }
 
   .detailContent {
-    background-color: antiquewhite;
-
-    border: 5px solid beige;
+    background-color: red;
+    width: 250px;
+    height: 360px;
+    left: 250px;
+    top: 250px;
+    border-radius: 20px;
+    border: 2px solid beige;
     align-items: center;
+    order: 1;
+    align-self: flex-start;
   }
-  .div-ability {
+
+  .div-info {
+    background-color: red;
+    width: 100px;
+    height: 300px;
+    left: 50px;
+    top: 100px;
+    border-radius: 20px;
+    border: 2px solid beige;
+    align-items: center;
+    order: 2;
   }
 
   img {
-    float: flex;
     transition: all 0.5s;
-    position: flex;
-    
+    position: absolute;
+    z-index: 1300;
   }
 
   img:hover {

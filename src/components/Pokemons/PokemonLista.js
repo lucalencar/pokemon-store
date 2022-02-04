@@ -31,10 +31,10 @@ const PokemonList = (props) => {
       
       /> </p>
     }
-
     if (!_.isEmpty(pokemonList.data)) {
       return(
         <Fragment>
+          
           {pokemonList.data.map(item => 
             <Cards key={item.id} {...item} />
           )}
@@ -59,6 +59,7 @@ const PokemonList = (props) => {
           </S.Row>
         {!_.isEmpty(pokemonList.data) && (        
           <div>
+            
                 <nav className="blog-pagination">
                   <ReactPaginate
                     pageCount={Math.ceil(pokemonList.count / 16)}

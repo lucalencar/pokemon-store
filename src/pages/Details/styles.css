@@ -9,10 +9,10 @@ h4{
     color: #071e2e;
     font-weight: bold;
     padding: 5px 0;
-    display: flex;
-    flex-direction: column;
     align-items: center;
+    
 }
+
 h4:hover {
     
     transform: translateY(-5px);
@@ -27,9 +27,7 @@ h5{
     color: #071e2e;
     font-weight: bold;
     padding: 5px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
 }
 
 h6{

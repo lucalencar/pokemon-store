@@ -19,24 +19,28 @@ function Header() {
              </S.Image>
             <S.Button> 
                 <S.Contador>  0   </S.Contador>
+                <Link to='/Carrinho'>
                 <AiOutlineShoppingCart className="IconeShop" size={25} /> 
+                </Link>
             </S.Button>
-            <S.Button> <AiOutlineUser className="IconeUser" size={25} /> </S.Button>
-            <S.Button> <AiOutlineLogout className="IconeLogOut" size={25} /> </S.Button>
+            <S.Button> 
+            <Link to='/Perfil'>
+                <AiOutlineUser className="IconeUser" size={25} /> 
+                </Link>
+             </S.Button>
+            <S.Button> 
+            <Link to='/'>
+                <AiOutlineLogout className="IconeLogOut" size={25} /> 
+                </Link>
+                </S.Button>
         </S.Nav>
 
         <Music />
-
-     
 
         <PokemonList />
       
         </>
     )
-
-
-
-
  }
 
  export default Header;

@@ -7,7 +7,7 @@ import { LOAD_POKE_REQUEST,
 export const loadPokeName = (pokemonName) =>{
     return async (dispatch) =>{
        try{
-           console.log('teste do nome '+ pokemonName)
+           console.log('teste1 '+ pokemonName)
            dispatch({type: LOAD_POKE_REQUEST})
            console.log('teste2 '+ pokemonName)
            let dataURL = `https://pokeapi.co/api/v2/pokemon/${pokemonName}`
