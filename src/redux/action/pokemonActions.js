@@ -1,37 +1,40 @@
 import axios from "axios";
 
-// export const GetPokemonList = (page) => async dispatch => {
-//   try {
-//     dispatch({
-//       type: "POKEMON_LIST_LOADING"
-//     });
+export const POKE_KEY = 'pokeStore'
 
-//     const perPage = 15;
-//     const offset = (page * perPage) - perPage;
+export const GetPokemonList = (page) => async dispatch => {
+  try {
+    dispatch({
+      type: "POKEMON_LIST_LOADING"
+    });
 
-//     const res = await axios.get(`https://pokeapi.co/api/v2/pokemon?limit=${perPage}&offset=${offset}`)
-  
+    const perPage = 16;
+    const offset = (page * perPage) - perPage;
 
-//     dispatch({
-//       type: "POKEMON_LIST_SUCCESS",
-//       payload: res.data
-//     })
-//   } catch (e) {
-//     dispatch({
-//       type: "POKEMON_LIST_FAIL",
-//     })
-//   }
-// };
+    const res = await axios.get(`https://pokeapi.co/api/v2/pokemon?limit=${perPage}&offset=${offset}`)
+
+    dispatch({
+      type: "POKEMON_LIST_SUCCESS",
+      payload: res.data
+    })
+  } catch (e) {
+    dispatch({
+      type: "POKEMON_LIST_FAIL",
+    })
+  }
+};
 
 export const GetPokemon = (pokemon) => async dispatch => {
+<<<<<<< HEAD
+=======
 
+>>>>>>> staging
   try {
     dispatch({
       type: "POKEMON_MULTIPLE_LOADING"
     });
 
     const res = await axios.get(`https://pokeapi.co/api/v2/pokemon/${pokemon}`);
- 
 
     dispatch({
       type: "POKEMON_MULTIPLE_SUCCESS",
@@ -44,10 +47,3 @@ export const GetPokemon = (pokemon) => async dispatch => {
     })
   }
 };
-
-export function searchPokemon(pokemon) {
-  return {
-      type: 'SEARCHED_POKEMON',
-      payload: pokemon
-  }
-}
