@@ -46,10 +46,10 @@ export default function Login() {
           <S.Label>Senha</S.Label>
           <S.Input type="password" name="password" onChange={handleChange} placeholder="Digite sua senha" />
           <S.Senha> Esqueceu sua senha?</S.Senha>
-          
+
           <S.Button>Go !</S.Button>
           <S.CadastroTitulo> Ainda não é um treinador Pokémon? </S.CadastroTitulo>
-          <S.Cadastro> Cadastre-se agora</S.Cadastro>
+          <S.Cadastro onClick={() => navigate('../cadastro', { replace: true })}> Cadastre-se agora </S.Cadastro>
         </S.Form>
       </S.FormDiv>
     </div>
