@@ -45,7 +45,7 @@ export default function Login() {
 
           <S.Label>Senha</S.Label>
           <S.Input type="password" name="password" onChange={handleChange} placeholder="Digite sua senha" />
-          <S.Senha> Esqueceu sua senha?</S.Senha>
+          <S.Senha onClick={() => navigate('../password', { replace: true })}> Esqueceu sua senha?</S.Senha>
 
           <S.Button>Go !</S.Button>
           <S.CadastroTitulo> Ainda não é um treinador Pokémon? </S.CadastroTitulo>

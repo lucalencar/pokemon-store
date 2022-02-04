@@ -7,6 +7,7 @@ import Home from './pages/Home/Home.js';
 import Login from './pages/Login/Login.js';
 import Perfil from './pages/Perfil/Perfil.js';
 import Cadastro from './pages/Cadastro/Cadastro.js';
+import Password from './pages/Password/Password';
 import {Provider} from "react-redux";
 import Store from "../src/redux/store";
 
@@ -28,6 +29,7 @@ function App() {
             <Route path="/Details" element={<Details />} />
             <Route path="/Carrinho" element={<Carrinho />} />
             <Route path="/Cadastro" element={<Cadastro/>} />
+            <Route path="/Password" element={<Password/>} />
             
           </Routes>
           </div>
