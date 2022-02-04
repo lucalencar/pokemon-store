@@ -89,8 +89,8 @@ export const Senha = styled.div`
 `;
 
 
-export const TituloCadastro = styled.h4`
-    margin-top: 8px;
+export const TituloSenha = styled.h4`
+    margin-top: 47px;
     top: 97px;
     right: 183px;
     position: absolute;

@@ -14,10 +14,9 @@ export default function Passowrd() {
     <div title="Login">
       <S.FormDiv>
         <img src={logo}  className="Logo"/>
-      <S.TituloCadastro> Redefina sua senha </S.TituloCadastro>
+      <S.TituloSenha> Redefina sua senha </S.TituloSenha>
           <img src={Fundo} className="ImgFundo" />
         <S.Form>
-          <S.Label>Cadastre sua senha</S.Label>
           <p> Enviaremos uma solicitação por e-mail para redefinição de senha</p>
           <S.Input type="email" name="senha"  placeholder="Digite seu email" 
           />
