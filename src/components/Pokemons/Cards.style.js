@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import ModalUnstyled from '@mui/base/ModalUnstyled';
 export const Card = styled.div`
     margin: 55px 20px;
     display: inline-grid;
@@ -100,3 +100,53 @@ export const Price = styled.div`
     margin-left: 15px;
     color: #717171;
 `;
+
+//MODAL
+export const Backdrop = styled.div`
+  z-index: -1;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-tap-highlight-color: transparent;
+`;
+
+export const Box= styled.div`
+  width: 400;
+  background: white;
+  border: 2px dotted #dbde1b;
+  width: 510px;
+    height: 357px;
+    color: #717171;
+    box-shadow: 3px 4px 9px #000000a3;
+`;
+
+export const ButtonDetalhes= styled.button`
+ border: none;
+ background: transparent;
+ cursor: pointer;
+ margin-left: 10px;
+ font-family: Lato;
+ font-style: normal;
+ font-weight: 500;
+ font-size: 14px;
+ line-height: 129.2%;
+ color: #717171;
+
+`;
+
+
+export const StyledModal = styled(ModalUnstyled)`
+   position: fixed;
+  z-index: 1300;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
