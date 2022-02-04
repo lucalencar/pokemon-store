@@ -45,8 +45,11 @@ export default function Login() {
 
           <S.Label>Senha</S.Label>
           <S.Input type="password" name="password" onChange={handleChange} placeholder="Digite sua senha" />
-
-          <S.Button>Entrar</S.Button>
+          <S.Senha> Esqueceu sua senha?</S.Senha>
+          
+          <S.Button>Go !</S.Button>
+          <S.CadastroTitulo> Ainda não é um treinador Pokémon? </S.CadastroTitulo>
+          <S.Cadastro> Cadastre-se agora</S.Cadastro>
         </S.Form>
       </S.FormDiv>
     </div>

@@ -121,6 +121,7 @@ export const Box= styled.div`
     height: 357px;
     color: #717171;
     box-shadow: 3px 4px 9px #000000a3;
+    
 `;
 
 export const ButtonDetalhes= styled.button`

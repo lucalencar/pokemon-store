@@ -64,12 +64,58 @@ export const Button = styled.button`
     border: none;
     border-radius: 3px;
     margin-top: 20px;
+    font-size: 18px;
     cursor: pointer;
     &:hover{
         background: #881414;
     }
-  
-  
+`;
+
+export const CadastroTitulo = styled.div`
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 15px;
+    margin-left: 41px;
+    color: #717171;
+`;
+
+export const Cadastro = styled.div`
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 0px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 15px;
+    margin-left: 95px;
+    color: #717171;
+    cursor: pointer;
+    text-decoration-line: underline;
+    &:hover{
+      color: #881414;
+    }
+`;
+
+export const Senha = styled.div`
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    text-decoration-line: underline;
+    color: #717171;
+    cursor: pointer;
+    &:hover{
+      color: #881414;
+    }
 `;
 
 export const Titulo = styled.h4`
