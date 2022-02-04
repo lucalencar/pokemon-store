@@ -25,6 +25,10 @@ export const GetPokemonList = (page) => async dispatch => {
 };
 
 export const GetPokemon = (pokemon) => async dispatch => {
+<<<<<<< HEAD
+=======
+
+>>>>>>> staging
   try {
     dispatch({
       type: "POKEMON_MULTIPLE_LOADING"

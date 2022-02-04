@@ -7,8 +7,10 @@ export default function useTheme() {
         homeBg: '##E5E5E5;',
         foreground: '#101010',
         foregroundLight: '#717171',
-        buttonBg: '#292929',
+        buttonBg: '#d50e0e',
         buttonFg: '#FFFFFF',
+        buttonBgHover: '#9b1111',
+        buttonFgHover: '#FFFFFF',
     }
 
     const [theme, setTheme] = useState(themeGlobal);

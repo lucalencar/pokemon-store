@@ -173,11 +173,18 @@ export const Continuar = styled.button`
     left: 307px;
     top: 610px;
     border: 2px solid;
+    border-color: ${props => props.theme.buttonBg};
     box-sizing: border-box;
     border-radius: 5px;
-    background-color: ${props => props.theme.buttonBg};
-    color: ${props => props.theme.buttonFg};
+    background-color: ${props => props.theme.buttonFg};
+    color: ${props => props.theme.buttonBg};
     cursor: pointer;
+
+    &:hover{
+      background: ${props => props.theme.buttonFgHover};
+      border-color: ${props => props.theme.buttonFgHover};
+      color: ${props => props.theme.buttonBgHover};
+    }
 `;
 
 export const Finalizar = styled.button`
@@ -186,11 +193,18 @@ export const Finalizar = styled.button`
     left: 307px;
     top: 610px;
     border: 2px solid;
+    border-color: ${props => props.theme.buttonBg};
     box-sizing: border-box;
     border-radius: 5px;
     background-color: ${props => props.theme.buttonBg};
     color: ${props => props.theme.buttonFg};
     cursor: pointer;
+
+    &:hover{
+      background: ${props => props.theme.buttonBgHover};
+      border-color: ${props => props.theme.buttonBgHover};
+      color: ${props => props.theme.buttonFgHover};
+    }
 `;
 
 export const AddRemove = styled.button`
@@ -218,4 +232,5 @@ export const IconItem = styled.div`
 
 export const Icon = styled.img`
     height: 25px;
+    cursor: pointer;
 `;
