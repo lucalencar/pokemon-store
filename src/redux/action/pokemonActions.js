@@ -1,6 +1,7 @@
 import axios from "axios"
 
 
+<<<<<<< HEAD
 export const GetPokemonList = (page) => async dispatch => {
   try {
     dispatch({
@@ -24,6 +25,8 @@ export const GetPokemonList = (page) => async dispatch => {
 };
 
 export const GetPokemon = (pokemon) => async dispatch => {
+=======
+>>>>>>> origin/staging
   try {
     dispatch({
       type: "POKEMON_MULTIPLE_LOADING"

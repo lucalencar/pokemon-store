@@ -14,7 +14,7 @@ export default function Navbar() {
         <S.Nav>
         <S.Image> <img src={Logo} alt="" className="LogoPokemon" />  </S.Image>
         <S.Button>
-            {/* <S.Contador> {cartList.total} </S.Contador> */}
+            <S.Contador> 0 </S.Contador>
             <AiOutlineShoppingCart className="IconeShop" size={25} onClick={() => navigate('../carrinho', { replace: true })} />
         </S.Button>
         <S.Button> <AiOutlineUser className="IconeUser" size={25} /> </S.Button>

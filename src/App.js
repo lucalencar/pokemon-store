@@ -11,6 +11,26 @@ import Password from './pages/Password/Password';
 import {Provider} from "react-redux";
 import Store from "../src/redux/store";
 
+function App() {
+
+  const { theme } = useTheme();
+
+return (
+  <BrowserRouter basename="/">
+    <ThemeProvider theme={theme}>
+      <GlobalStyle />
+      <div>
+        <Routes>
+          <Route path='/' element={<Login />} />
+          <Route path='/login' element={<Login />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/perfil" element={<Perfil />} />
+          <Route path="/carrinho" element={<Carrinho />} />
+        </Routes>
+      </div>
+    </ThemeProvider>
+  </BrowserRouter>
+);
 
 function App() {
   return (
