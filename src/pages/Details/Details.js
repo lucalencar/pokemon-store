@@ -60,17 +60,3 @@ const Details = () => {
 };
 
 export default Details
-
-  
-
-
-
-export default function Details() {
-
-    const navigate = useNavigate();
-
-
-    return (
-        <div>Details</div>
-    );
-}

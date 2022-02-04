@@ -26,7 +26,6 @@ export const Div = styled.div`
     border-style: solid;
     justify-content: safe;
     align-items: stretch; */
-
   .b-back {
     background-color: rgb(230, 149, 56);
     cursor: pointer;
@@ -34,7 +33,6 @@ export const Div = styled.div`
     margin-left: 10%;
     z-index: 1300;
   }
-
   .detailContent {
     background-color: red;
     width: 250px;
@@ -47,7 +45,6 @@ export const Div = styled.div`
     order: 1;
     align-self: flex-start;
   }
-
   .div-info {
     background-color: red;
     width: 100px;
@@ -59,13 +56,11 @@ export const Div = styled.div`
     align-items: center;
     order: 2;
   }
-
   img {
     transition: all 0.5s;
     position: absolute;
     z-index: 1300;
   }
-
   img:hover {
     transform: translateY(-5px);
     -webkit-filter: drop-shadow(15px 10px 5px rgba(0, 0, 0, 0.5));
@@ -73,7 +68,6 @@ export const Div = styled.div`
     -webkit-transform: scale(1.2);
     transform: scale(1.2);
   }
-
   .detailContent h6 {
     background-color: #071e2e;
     font-size: 25px;
@@ -82,7 +76,6 @@ export const Div = styled.div`
     padding: 5px 0;
     text-transform: uppercase;
   }
-
   p {
     font-size: 14px;
     font-weight: bold;
@@ -101,7 +94,6 @@ export const Button = styled.div`
   margin-top: auto;
   margin-left: 10px;
   cursor: pointer;
-
   &:hover {
     background: #cac20c;
   }
@@ -119,7 +111,6 @@ export const ButtonBack = styled.div`
   margin-top: -10px;
   margin-left: 10px;
   cursor: pointer;
-
   &:hover {
     background: red;
   }
