@@ -1,33 +1,90 @@
 import TYPES from "../types/types";
 
 const INITIAL_STATE = {
-  // items: [{
-  //   id: 0,
-  //   name: "",
-  //   price: 0,
-  //   image: '',
-  // }],
-  items: []
+  items: [],
+  total: 0,
 };
 
 const CartReducer = (state = INITIAL_STATE, action) => {
-  let items = [];
-
   switch (action.type) {
-    case TYPES.ADD_TO_CART:
-      items = state.items;
-      items.push(action.payload.id);
-      return { ...state, items: items };
-    case TYPES.REMOVE_FROM_CART:
-      items = state.items;
-      const index = items.indexOf(action.payload.id);
-      if (index > -1) {
-        items.splice(index, 1);
+    case TYPES.ADD_TO_CART: {
+      const updatedCart = [...state.items];
+      const index = updatedCart.findIndex(x => x.id === action.payload.id);
+      if (index >= 0) {
+        const pokemon = updatedCart[index];
+        updatedCart[index] = { ...pokemon, quantity: pokemon.quantity + 1 };
       }
-      return { ...state, items: items };
+      else {
+        updatedCart.push(action.payload);
+      }
+      return {
+        ...state,
+        items: updatedCart,
+        total: updatedCart.length,
+      }
+    }
 
-    default:
-      return state;
+    case TYPES.REMOVE_FROM_CART: {
+      const updatedCart = [...state.items];
+      const index = updatedCart.findIndex(x => x.id === action.payload.id);
+      if (index > -1) {
+        const pokemon = updatedCart[index];
+        updatedCart.splice(pokemon, 1);
+      }
+      return {
+        ...state,
+        items: updatedCart,
+        total: updatedCart.length
+      }
+    }
+
+    case TYPES.INCREMENT: {
+      const { payload } = action;
+      const item = state.items.find(
+        product => product.id === payload);
+      if (item) {
+        return {
+          ...state,
+          items: state.items.map(item => item.id === payload
+            ? {
+              ...item,
+              quantity: item.quantity + 1,
+            }
+            : item
+          ),
+        };
+      }
+      return {
+        ...state,
+        items: [...state.items, item]
+      };
+    }
+
+    case TYPES.DECREMENT: {
+      const { payload } = action;
+      const item = state.items.find(
+        product => product.id === payload);
+      if (item) {
+        return {
+          ...state,
+          items: state.items.map(item => item.id === payload
+            ? {
+              ...item,
+              quantity: item.quantity - 1,
+            }
+            : item
+          ),
+        };
+      }
+
+      return {
+        ...state,
+        items: [...state.items, item]
+      };
+    }
+    default: {
+      return state
+    }
   }
 };
 

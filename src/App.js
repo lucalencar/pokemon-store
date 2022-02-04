@@ -2,7 +2,6 @@ import React from "react";
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import { GlobalStyle } from './styles/global.js';
 import Carrinho from './pages/Carrinho/Carrinho.js';
-import Details from './pages/Details/Details.js';
 import Home from './pages/Home/Home.js';
 import Login from './pages/Login/Login.js';
 import Perfil from './pages/Perfil/Perfil.js';

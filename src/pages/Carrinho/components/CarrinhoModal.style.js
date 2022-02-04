@@ -96,7 +96,6 @@ export const Voltar = styled.button`
     top: 610px;
     background-color: ${props => props.theme.buttonBg};
     color: ${props => props.theme.buttonFg};
-    color: white;
     border: 2px solid;
     box-sizing: border-box;
     border-radius: 5px;
@@ -107,9 +106,9 @@ export const Voltar = styled.button`
     font-size: 14px;
 
     &:hover{
-      background: #CAC20C;
-      border-color: #CAC20C;
-      color: #202020;
+      background: ${props => props.theme.buttonBgHover};
+      border-color: ${props => props.theme.buttonBgHover};
+      color: ${props => props.theme.buttonFgHover};
     }
 `;
 

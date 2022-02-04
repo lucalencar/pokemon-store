@@ -1,11 +1,8 @@
 const TYPES = {
-    increase: "INCREASE",
-    decrease: "DECREASE",
     ADD_TO_CART: "ADD_TO_CART",
     REMOVE_FROM_CART: "REMOVE_FROM_CART",
-    ADD_QUANTITY: "ADD_QUANTITY",
-    REMOVE_QUANTITY: "REMOVE_QUANTITY"
-
+    INCREMENT: "INCREMENT",
+    DECREMENT: "DECREMENT",
 }
 
 export default TYPES;

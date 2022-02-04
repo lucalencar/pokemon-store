@@ -13,7 +13,7 @@ const PokemonList = (props) => {
 
 
   function preco(index) {
-    const price = (Math.random() * ((30000 * index) - (5000 * index)) + (5000 * index)).toLocaleString('pt-br', { style: 'currency', currency: 'BRL' });
+    const price = (Math.random() * ((300 * index) - (5 * index)) + (5 * index));
     return price;
   }
 

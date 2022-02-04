@@ -1,6 +1,5 @@
 import React from 'react'
 import * as S from "./styles";
-import { useState } from 'react';
 import useCart from '../../hooks/useCart';
 //Puxando imagem, nome e tipo
 const PokemonThumb = ({ image, name, type, price, id }) => {
@@ -9,8 +8,9 @@ const PokemonThumb = ({ image, name, type, price, id }) => {
 
     const style = type + " thumb-container";
 
-    function addToCartList(index, nome, preco, img) {
-        const item = {id: index, name: nome, price: preco, image: img };
+
+    function addToCartList(index, nome, preco, img) {     
+        const item = {id: index, name: nome, price: preco, image: img, quantity: 1 };
         addCart(item);
     }
 
@@ -23,9 +23,9 @@ const PokemonThumb = ({ image, name, type, price, id }) => {
                 <small className="TipoPokemon">Pokemon tipo {type}</small>
                 
                 <S.Detalhes> + detalhes </S.Detalhes>
-                <S.Price> {price} </S.Price>
+                <S.Price> {price.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })} </S.Price>
             </div>
-            <S.Button onClick={() => addToCartList(`${id}`, `${name}`, `${price}`, `${id}`,)}> Adicionar ao carrinho </S.Button>
+            <S.Button onClick={() => addToCartList(`${id}`, `${name}`, `${price}`, `${id}`)}> Adicionar ao carrinho </S.Button>
         </S.Pokemon>
         </S.list>   
     )
