@@ -5,6 +5,7 @@ import Fundo from "../../img/backgroundLogin.jpg"
 import logo from "../../img/Logo.svg"
 
 
+
 export default function Passowrd() {
 
     const navigate = useNavigate();

@@ -139,3 +139,13 @@ export const ErrorTip = styled.p`
   margin-top: -4px;
 `;
 
+
+export const IconeSenha= styled.div`
+    cursor: pointer;
+    color: red;
+    position: absolute;
+    top: 143px;
+    left: 255px;
+
+`;
+
