@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import * as S from "./login.styles";
 import Fundo from "../../img/backgroundLogin.jpg"
 import logo from "../../img/Logo.svg"
@@ -65,7 +65,7 @@ export default function Login() {
             
           </S.Label>
          
-          <S.Input  type={type}
+          <S.Input  type="{type}"
           name="password" onChange={handleChange} placeholder="Digite sua senha" >
           </S.Input>
           <S.IconeSenha onClick={handleToggle}><Icon icon={icon} size={25}/></S.IconeSenha>

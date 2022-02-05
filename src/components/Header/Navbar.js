@@ -4,6 +4,7 @@ import { AiOutlineUser, AiOutlineLogout, AiOutlineShoppingCart } from "react-ico
 import Logo from "../../../src/img/Logo.svg";
 import useCart from "../../hooks/useCart";
 
+
 export default function Navbar() {
 
     const { cartList } = useCart();
@@ -17,8 +18,17 @@ export default function Navbar() {
             <S.Contador> {cartList.total} </S.Contador>
             <AiOutlineShoppingCart className="IconeShop" size={25} onClick={() => navigate('../carrinho', { replace: true })} />
         </S.Button>
+
         <S.Button onClick={() => navigate('../perfil', { replace: true })}> <AiOutlineUser className="IconeUser" size={25} /> </S.Button>
-        <S.Button onClick={() => navigate('../login', { replace: true })}> <AiOutlineLogout className="IconeLogOut" size={25} /> </S.Button>
+       
+        <S.Button onClick={() => navigate('../login', { replace: true })}>
+             <AiOutlineLogout className="IconeLogOut" size={25} /> 
+
+        
+        </S.Button>
+
+      
+ 
     </S.Nav>
     )
 }

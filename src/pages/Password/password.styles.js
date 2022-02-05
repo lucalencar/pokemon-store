@@ -66,10 +66,28 @@ export const Button = styled.button`
     border: none;
     border-radius: 3px;
     margin-top: 20px;
-    font-size: 16px;
+    font-size: 12px;
     cursor: pointer;
     &:hover{
         background: #881414;
+    }
+`;
+
+export const ButtonVoltar = styled.button`
+      padding: 10px 15px;
+    color: rgb(255 0 0);
+    font-weight: 600;
+    text-transform: uppercase;
+    border: 1px solid red;
+    background: white;
+    text-transform: uppercase;
+    border-radius: 3px;
+    margin-top: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    &:hover{
+        color: #881414;
+        border: 1px solid #881414;
     }
 `;
 

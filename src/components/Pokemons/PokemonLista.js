@@ -10,7 +10,7 @@ import CarregarPoke from "../../../src/img/pokebola.gif";
 import '../../assets/css/pagination.css'
 
 const PokemonList = (props) => {
-  const [search, setSearch] = useState('');
+  
   const dispatch = useDispatch();
   const pokemonList = useSelector(state => state.PokemonList);
   React.useEffect(() => {
