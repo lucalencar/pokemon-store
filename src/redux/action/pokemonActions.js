@@ -1,7 +1,7 @@
-import axios from "axios"
+import axios from "axios";
 
+export const POKE_KEY = 'pokeStore'
 
-<<<<<<< HEAD
 export const GetPokemonList = (page) => async dispatch => {
   try {
     dispatch({
@@ -25,8 +25,6 @@ export const GetPokemonList = (page) => async dispatch => {
 };
 
 export const GetPokemon = (pokemon) => async dispatch => {
-=======
->>>>>>> origin/staging
   try {
     dispatch({
       type: "POKEMON_MULTIPLE_LOADING"
@@ -45,4 +43,3 @@ export const GetPokemon = (pokemon) => async dispatch => {
     })
   }
 };
-

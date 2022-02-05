@@ -20,6 +20,7 @@ export const Image = styled.div`
     height: 39px;
     left: 53px;
     top: 17px;
+    cursor: pointer;
    } 
 `;
 

@@ -5,7 +5,7 @@ function App() {
 
   const [songs] = useState([
     {
-      src: "../../../public/Music/abertura.mp3"
+      src: "./Music/abertura.mp3"
     },
   ]);
 

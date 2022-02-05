@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const MainBox = styled.div`
-    height: 100vh;
+    height: 127vh;
     background-color: #f8f5ec;
     display: flex;
     justify-content: center;
@@ -25,6 +25,7 @@ export const CardBox = styled.div`
     background-color: ${props => props.theme.background};
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
     border-radius: 20px;
+    margin-top: 47px;
 `;
 
 export const TopDiv = styled.div`
@@ -173,17 +174,17 @@ export const Continuar = styled.button`
     left: 307px;
     top: 610px;
     border: 2px solid;
-    border-color: ${props => props.theme.buttonBgLight};
+    border-color: ${props => props.theme.buttonBg};
     box-sizing: border-box;
     border-radius: 5px;
-    background-color: ${props => props.theme.buttonBgLight};
-    color: ${props => props.theme.buttonFgLight};
+    background-color: ${props => props.theme.buttonFg};
+    color: ${props => props.theme.buttonBg};
     cursor: pointer;
 
     &:hover{
-      background: #CAC20C;
-      border-color: #CAC20C;
-      color: #202020;
+      background: ${props => props.theme.buttonFgHover};
+      border-color: ${props => props.theme.buttonFgHover};
+      color: ${props => props.theme.buttonBgHover};
     }
 `;
 
@@ -201,9 +202,9 @@ export const Finalizar = styled.button`
     cursor: pointer;
 
     &:hover{
-      background: #CAC20C;
-      border-color: #CAC20C;
-      color: #202020;
+      background: ${props => props.theme.buttonBgHover};
+      border-color: ${props => props.theme.buttonBgHover};
+      color: ${props => props.theme.buttonFgHover};
     }
 `;
 
@@ -232,4 +233,5 @@ export const IconItem = styled.div`
 
 export const Icon = styled.img`
     height: 25px;
+    cursor: pointer;
 `;

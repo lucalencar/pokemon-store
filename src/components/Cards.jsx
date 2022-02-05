@@ -1,18 +1,32 @@
+import React, { Fragment, useEffect, useState } from 'react'
+import Badges from '../components/Badges'
+import * as S from '../components/Pokemons/Cards.style'
+import Details from '../pages/Details/Details'
+import Modal from '../components/Modal/Modal';
+import useCart from "../hooks/useCart";
 
-import React, { Fragment, useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
-import Badges from '../components/Badges';
-import * as S from '../components/Pokemons/Cards.style';
-// import Modal from '../components/Modal/Modal';
-import { styled, Box } from '@mui/system';
-import ModalUnstyled from '@mui/base/ModalUnstyled';
+
+
 const Cards = ( { url } ) => {
 
+    const { addCart } = useCart();
+
+    // function preco(index) {
+    //     const price = (Math.random() * ((300 * index) - (5 * index)) + (5 * index));
+    //     return price;
+    //   }
+    
+
+    function addToCartList(index, nome, preco, img) {     
+        const item = {id: index, name: nome, price: preco, image: img, quantity: 1 };
+        addCart(item);
+    }
 
 
-    const [open, setOpen] = React.useState(false);
-    const handleOpen = () => setOpen(true);
-    const handleClose = () => setOpen(false);
+        const [open, setOpen] = useState(false);
+        const handleOpen = () => setOpen(true);
+        const handleClose = () => setOpen(false);
+
     const imgURL = 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/';
     const png = '.png';
     const [ pokemon, setPokemon ] = useState({ types: [] });
@@ -30,27 +44,33 @@ const Cards = ( { url } ) => {
         return number + "";
     }
 
+    // const [openModal, setOpenModal] = useState(false); 
+    // const [modalOpen, setModalOpen] = useState(false);
+
+
+
     return (
         <Fragment>
             <S.Card>
-                    
+            
                 <div className="properties properties2 mb-30">
                     <div className="properties__card">
                         <div className="properties__img overlay1">
-                            <Link to={`/pokemon/`}>
                                 <img src={`${imgURL}${pokemon.id}${png}`} className='ImgPokemon' alt={pokemon.name} />
-                            </Link>
                         </div>
                         <div className="properties__caption">
                             <h3 className="NomePokemon">
                                {pokemon.name}
                             </h3>
-                            <S.TipoPokemon> Pokemon tipo 
+                            <S.TipoPokemon> Pokemon Tipo 
                                 {pokemon.types.map(item =>
                                     <Badges key={item.id} {...item} />
                                 )}
                             </S.TipoPokemon>
-                            {/* <button
+                            <S.ButtonDetalhes type="button" onClick={handleOpen}>
+                            + Detalhes
+                                </S.ButtonDetalhes>
+                                {/* <button
                             className="openModalBtn"
                             onClick={() => {
                             setModalOpen(true);
@@ -60,33 +80,30 @@ const Cards = ( { url } ) => {
                             </button>
 
                         {modalOpen && <Modal setOpenModal={setModalOpen} />} */}
-
-                    <S.ButtonDetalhes type="button" onClick={handleOpen}>
-                            + Detalhes
-                    </S.ButtonDetalhes>
                             <S.Price> R$1000,00</S.Price>
-                            <S.Button> Adicionar ao carrinho</S.Button>
-
-                        {/* CARD */}
+                            <S.Button onClick={() => addToCartList(`${pokemon.id}`, `${pokemon.name}`, 1000, `${pokemon.id}`)}> Adicionar ao carrinho</S.Button>
                             <S.StyledModal
-                                aria-labelledby="unstyled-modal-title"
-                                aria-describedby="unstyled-modal-description"
+                                aria-describedby="link-details"
+
                                 open={open}
                                 onClose={handleClose}
                                 BackdropComponent={S.Backdrop}
                                 >
                                 <S.Box>
-                                    <h2 id="unstyled-modal-title">Text in a modal</h2>
-                                    <p id="unstyled-modal-description">Aliquid amet deserunt earum!</p>
+                                    <nav id="link-details">
+                                        <Details />
+                                    </nav>
+                                    
                                 </S.Box>
                             </S.StyledModal>
                         </div>
                     </div>
                 </div>
+                {/* {openModal && <Details closeModal={setOpenModal} />} */}
             </S.Card>
         </Fragment>
     );
+    
 };
 
 export default Cards;
-

@@ -126,7 +126,7 @@ export const Titulo = styled.h4`
     font-family: Lato;
     font-style: normal;
     font-weight: 800;
-    font-size: 35px;
+    font-size: 22px;
     line-height: 42px;
     color: #292929;
 

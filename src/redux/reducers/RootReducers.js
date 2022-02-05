@@ -1,14 +1,15 @@
 import {combineReducers} from "redux";
 import PokemonListReducer from "./PokemonListReducer";
 import PokemonMultipleReducer from "./PokemonMultipleReducer";
-import CounterReducer from "./Counter.reducer";
+import { pokeReducer, POKE_KEY } from './PokemonDetailsReducer';
 import CartReducer from "./CartReducer";
 
 const RootReducer = combineReducers({
   PokemonList: PokemonListReducer,
   Pokemon: PokemonMultipleReducer,
-  counter: CounterReducer,
+  [POKE_KEY]: pokeReducer,
   Cart: CartReducer,
+
 });
 
 export default RootReducer;

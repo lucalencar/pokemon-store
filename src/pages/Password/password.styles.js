@@ -92,12 +92,13 @@ export const Senha = styled.div`
 export const TituloSenha = styled.h4`
     margin-top: 47px;
     top: 97px;
-    right: 183px;
+    width: 255px;
+    right: 190px;
     position: absolute;
     font-family: Lato;
     font-style: normal;
     font-weight: 800;
-    font-size: 35px;
+    font-size: 22px;
     line-height: 42px;
     color: #292929;
 
