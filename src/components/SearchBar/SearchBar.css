@@ -1,0 +1,91 @@
+.searchInputs {
+    display: flex;
+    position: absolute;
+    left: 60.75%;
+    right: 18.75%;
+    top: 10.25%;
+    color: #717171;
+    bottom: 6.25%;
+  }
+  
+  .search input {
+    background-color: white;
+    border: 0;
+    border-radius: 2px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    font-size: 18px;
+    padding: 15px;
+    height: 15px;
+    margin-top: 10px;
+    width: 200px;
+    background: #d4d4d4;
+  }
+  
+  .searchIcon {
+    height: 63px;
+    width: 50px;
+    background-color: white;
+    display: grid;
+    place-items: center;
+  }
+  
+  input:focus {
+    outline: none;
+  }
+  .searchIcon svg {
+    font-size: 30px;
+  }
+  
+  .dataResult {
+    position: absolute;
+    left: 60.75%;
+    right: 18.75%;
+    top: 100%;
+    margin-top: 5px;
+    width: 300px;
+    height: 200px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    overflow: hidden;
+    overflow-y: auto;
+  }
+  
+  .dataResult::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .dataResult .dataItem {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    color: black;
+  }
+  
+  .dataItem p {
+    margin-left: 10px;
+  }
+  a {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    background-color: lightgrey;
+  }
+  
+  #clearBtn {
+    cursor: pointer;
+  }
+
+  .addToCart {
+    background: #717171;
+    position: absolute;
+    color: white;
+    height: 25px;
+    width: 70px;
+    right: 5%;
+    text-align: center;
+    border-radius: 7px;
+    cursor: pointer;
+  }

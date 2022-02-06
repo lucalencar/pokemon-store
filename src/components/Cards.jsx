@@ -9,19 +9,7 @@ import useCart from "../hooks/useCart";
 
 const Cards = ( { url } ) => {
 
-    const { addCart } = useCart();
-
-    // function preco(index) {
-    //     const price = (Math.random() * ((300 * index) - (5 * index)) + (5 * index));
-    //     return price;
-    //   }
-    
-
-    function addToCartList(index, nome, preco, img) {     
-        const item = {id: index, name: nome, price: preco, image: img, quantity: 1 };
-        addCart(item);
-    }
-
+    const { formatPrice, addToCartList } = useCart();
 
         const [open, setOpen] = useState(false);
         const handleOpen = () => setOpen(true);
@@ -80,7 +68,7 @@ const Cards = ( { url } ) => {
                             </button>
 
                         {modalOpen && <Modal setOpenModal={setModalOpen} />} */}
-                            <S.Price> R$1000,00</S.Price>
+                            <S.Price>{formatPrice(1000)}</S.Price>
                             <S.Button onClick={() => addToCartList(`${pokemon.id}`, `${pokemon.name}`, 1000, `${pokemon.id}`)}> Adicionar ao carrinho</S.Button>
                             <S.StyledModal
                                 aria-describedby="link-details"
