@@ -1,7 +1,6 @@
 import * as S from './Carrinho.style';
-import TrashIcon from '../../../img/trash.svg';
-import useCart from '../../../hooks/useCart';
-
+import TrashIcon from '../../img/trash.svg';
+import useCart from '../../hooks/useCart';
 
 export default function ShopItem() {
 

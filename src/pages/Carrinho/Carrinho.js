@@ -1,9 +1,9 @@
 import { useNavigate } from "react-router-dom";
-import * as S from "./components/Carrinho.style";
+import * as S from "../../components/Cart/Carrinho.style";
 import { useState } from "react";
 import CarrinhoModal from "./CarrinhoModal";
-import Titulos from "./components/Titulos";
-import ShopList from "./components/ShopList";
+import Titulos from "../../components/Cart/Titulos";
+import ShopList from "../../components/Cart/ShopList";
 import Navbar from '../../components/Header/Navbar';
 
 export default function Carrinho() {
