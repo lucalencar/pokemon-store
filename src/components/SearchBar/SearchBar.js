@@ -1,4 +1,3 @@
-import "./SearchBar.css";
 import SearchIcon from "@material-ui/icons/Search";
 import CloseIcon from "@material-ui/icons/Close";
 import useSearch from "../../hooks/useSearch";

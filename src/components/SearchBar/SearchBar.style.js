@@ -49,6 +49,7 @@ export const resultado = styled.div`
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     overflow: hidden;
     overflow-y: auto;
+    z-index: 1;
 
 
     &:-webkit-scrollbar {
@@ -59,7 +60,6 @@ export const resultado = styled.div`
 
 export const name = styled.div`
     margin: 15px;
-
 `;
 
 export const Button = styled.button`
