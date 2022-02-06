@@ -1,8 +1,7 @@
 import React, { Fragment, useEffect, useState } from 'react'
 import Badges from '../components/Badges'
 import * as S from '../components/Pokemons/Cards.style'
-import Details from '../pages/Details/Details'
-import Modal from '../components/Modal/Modal';
+import { Link } from "react-router-dom";
 import useCart from "../hooks/useCart";
 
 
@@ -32,11 +31,6 @@ const Cards = ( { url } ) => {
         return number + "";
     }
 
-    // const [openModal, setOpenModal] = useState(false); 
-    // const [modalOpen, setModalOpen] = useState(false);
-
-
-
     return (
         <Fragment>
             <S.Card>
@@ -55,38 +49,19 @@ const Cards = ( { url } ) => {
                                     <Badges key={item.id} {...item} />
                                 )}
                             </S.TipoPokemon>
-                            <S.ButtonDetalhes type="button" onClick={handleOpen}>
+                            <S.ButtonDetalhes type="button">
+                            <Link to={`/details/${pokemon.name}`}>
                             + Detalhes
-                                </S.ButtonDetalhes>
-                                {/* <button
-                            className="openModalBtn"
-                            onClick={() => {
-                            setModalOpen(true);
-                            }}
-                        >
-                             + Detalhes
-                            </button>
-                        {modalOpen && <Modal setOpenModal={setModalOpen} />} */}
+                            </Link>
+                            </S.ButtonDetalhes>
+                               
                             <S.Price>{formatPrice(1000)}</S.Price>
                             <S.Button onClick={() => addToCartList(`${pokemon.id}`, `${pokemon.name}`, 1000, `${pokemon.id}`)}> Adicionar ao carrinho</S.Button>
-                            <S.StyledModal
-                                aria-describedby="link-details"
-
-                                open={open}
-                                onClose={handleClose}
-                                BackdropComponent={S.Backdrop}
-                                >
-                                <S.Box>
-                                    <nav id="link-details">
-                                        <Details />
-                                    </nav>
-                                    
-                                </S.Box>
-                            </S.StyledModal>
+                           
                         </div>
                     </div>
                 </div>
-                {/* {openModal && <Details closeModal={setOpenModal} />} */}
+            
             </S.Card>
         </Fragment>
     );

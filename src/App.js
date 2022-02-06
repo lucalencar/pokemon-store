@@ -9,6 +9,7 @@ import { ThemeProvider } from "styled-components";
 import useTheme from './hooks/useChangeTheme.js';
 import Password from "../src/pages/Password/Password";
 import Cadastro from "../src/pages/Cadastro/Cadastro";
+import Details from "./pages/Details/Details.js";
 
 function App() {
 
@@ -27,6 +28,7 @@ return (
           <Route path="/carrinho" element={<Carrinho />} />
           <Route path="/password" element={<Password />} />
           <Route path="/cadastro" element={<Cadastro />} />
+          <Route path="/details/:url" element={<Details />} />
         </Routes>
       </div>
     </ThemeProvider>
