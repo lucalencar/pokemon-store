@@ -1,57 +1,69 @@
 import { useNavigate } from "react-router-dom";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import * as S from "../Cadastro/cadastro.styles";
 import Fundo from "../../img/backgroundLogin.jpg"
 import logo from "../../img/Logo.svg"
-import { useFormik } from "formik";
-import * as yup from "yup";
+import { useAuthState } from "react-firebase-hooks/auth";
+import {
+  auth,
+  registerWithEmailAndPassword,
+ 
+} from "../../components/firebase/firebase";
 
 
 export default function Cadastro() {
+  const navigate = useNavigate();
+//DADOS DE CADASTRO
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [name, setName] = useState("");
+  const [user, loading, error] = useAuthState(auth);
 
-    const navigate = useNavigate();
+  const register = () => {
+    if (!name) alert("Por favor, insira seu nome");
+    registerWithEmailAndPassword(name, email, password);
+  };
 
-    const schema = yup.object({
-        email: yup.string().required("Email obrigatório!").max(30),
-        senha: yup.string().required("Senha obrigatório!").max(7),
-      });
-    
-      const formik = useFormik({
-        initialValues: {
-          email: "",
-          senha: "",
-        },
-        validationSchema: schema,
-        onSubmit: (values) => {
-          console.log("SUBMIT", values);
-        }
-       
-      });
-
+  useEffect(() => {
+    if (loading) return;
+    // if (user) navigate("../home");
+  }, [user, loading]);
+//DADOS DE CADASTRO
 
   return (
     <div title="Login">
       <S.FormDiv>
         <img src={logo}  className="Logo"/>
-      <S.TituloCadastro> Faça seu Cadastro </S.TituloCadastro>
           <img src={Fundo} className="ImgFundo" />
-        <S.Form onSubmit={formik.handleSubmit}>
-          <S.Label> Cadastre seu e-mail</S.Label>
-          <S.Input type="email" name="email"  placeholder="Digite seu e-mail"
-            value={formik.values.email}
-            onChange={formik.handleChange}
-          />
-          {formik.errors.email && (  
-                <S.ErrorTip>{formik.errors.email}</S.ErrorTip>
-          ) } 
 
-          <S.Label>Cadastre sua senha</S.Label>
-          <S.Input type="password" name="senha"  placeholder="Digite sua senha" 
-            value={formik.values.senha}
-            onChange={formik.handleChange}
+        <S.Form>
+          <S.Label> Nome completo</S.Label>
+          <S.Input
+            type="text"
+            className="register__textBox"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            placeholder="Nome completo"
           />
-        {formik.errors.senha && <S.ErrorTip>{formik.errors.senha}</S.ErrorTip>}
-          <S.Button type="submit" onClick={() => navigate('../login', { replace: true })}> Cadastrar</S.Button>
+
+            <S.Label> Cadastre seu e-mail</S.Label>
+            <S.Input type="text" name="email"  placeholder="Digite seu e-mail"
+            onChange={(e) => setEmail(e.target.value)}
+            value={email}
+            />
+          
+
+            <S.Label>Cadastre sua senha</S.Label>
+            <S.Input type="password" name="senha"  placeholder="Digite sua senha" 
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            />
+          
+          <S.Button className="register__btn" onClick={register}>
+            Cadastrar
+          </S.Button>
+
+          <S.Button type="submit" onClick={() => navigate('../login', { replace: true })}> Já tem uma conta?</S.Button>
         
         </S.Form>
       </S.FormDiv>
