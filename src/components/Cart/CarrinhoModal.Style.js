@@ -4,7 +4,7 @@ export const Div = styled.div`
     position: absolute;
     width: 365px;
     height: 310px;
-    left: 477px;
+    left: 600px;
     top: 229px;
     display: block;
     flex-direction: column;
@@ -69,8 +69,6 @@ export const VoltarDiv = styled.div`
     top: 115px;
     display: flex;
     justify-content: center;
-
-
 `;
 
 export const CloseButton = styled.button`
@@ -104,7 +102,6 @@ export const Voltar = styled.button`
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
-
     &:hover{
       background: ${props => props.theme.buttonBgHover};
       border-color: ${props => props.theme.buttonBgHover};

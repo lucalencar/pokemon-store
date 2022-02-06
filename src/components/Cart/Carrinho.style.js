@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const MainBox = styled.div`
-    height: 127vh;
+    height: 100vh;
     background-color: #f8f5ec;
     display: flex;
     justify-content: center;
@@ -25,7 +25,6 @@ export const CardBox = styled.div`
     background-color: ${props => props.theme.background};
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
     border-radius: 20px;
-    margin-top: 47px;
 `;
 
 export const TopDiv = styled.div`
@@ -70,7 +69,6 @@ export const BottomDiv = styled.div`
     margin: auto;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-
 `;
 
 export const PokeItem = styled(Container)`
@@ -180,7 +178,6 @@ export const Continuar = styled.button`
     background-color: ${props => props.theme.buttonFg};
     color: ${props => props.theme.buttonBg};
     cursor: pointer;
-
     &:hover{
       background: ${props => props.theme.buttonFgHover};
       border-color: ${props => props.theme.buttonFgHover};
@@ -200,7 +197,6 @@ export const Finalizar = styled.button`
     background-color: ${props => props.theme.buttonBg};
     color: ${props => props.theme.buttonFg};
     cursor: pointer;
-
     &:hover{
       background: ${props => props.theme.buttonBgHover};
       border-color: ${props => props.theme.buttonBgHover};
@@ -220,7 +216,6 @@ export const AddRemove = styled.button`
     color: #292929;
     border: none;
     cursor: pointer;
-
     &:active {
         color: salmon;
     }

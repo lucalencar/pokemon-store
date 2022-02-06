@@ -1,10 +1,9 @@
-import * as S from './components/CarrinhoModal.style';
+import * as S from '../../components/Cart/CarrinhoModal.Style';
 import CarrinhoIcon from '../../img/Carrinho.svg';
 
 export default function CarrinhoModal({closeModal}) {
 
     return (
-        <> 
             <S.Div>
                 <S.TopDiv>
                     <S.Container>
@@ -34,7 +33,5 @@ export default function CarrinhoModal({closeModal}) {
                     </S.Container>
                 </S.VoltarDiv>
             </S.Div>
-            </>
     );
-
-}
+    }
