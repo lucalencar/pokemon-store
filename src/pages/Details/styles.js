@@ -3,9 +3,10 @@ import './styles.css';
 
 
 export const Div=styled.div`
-width: 365px;
+width: 583px;
 align-items: center;
-margin-left: 32.5%;
+margin-left: 27.5%;
+
 .detailContainer{
   display: flex;
   justify-content: center;
@@ -32,7 +33,7 @@ margin-left: 32.5%;
     align-content: flex-start;
 }
 .detailContent h6{
-    background-color: #071e2e;
+    background-color: #cf0808;
     font-size: 25px;
     color: white;
     font-weight: bold;
@@ -48,26 +49,35 @@ margin-left: 32.5%;
     text-transform:uppercase;
     color: #071e2e;
     font-weight: bold;
-    padding: 5px 0;
+    padding: 3px 21px;
     text-align: row;
     &:hover {   
     transform: translateY(-5px);
   }
 }
 .detailContent h1{
-    font-family: 'Press Start 2P', cursive;
-    font-size: 8px;
-    text-transform:uppercase;
+    font-family: 'Press Start 2P',cursive;
+    font-size: 10px;
+    text-transform: uppercase;
     color: #071e2e;
     font-weight: bold;
-    padding: 5px 0;
-    text-align: center;
+    padding: 3px 21px;
     &:hover {   
     transform: translateY(-5px);
   }
 }
 .moves {
-  justify-content: flex-start;
+  display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: row;
+    -webkit-justify-content: row;
+    -ms-flex-pack: row;
+    justify-content: row;
+    -webkit-align-content: flex-start;
+    -ms-flex-line-pack: start;
+    align-content: flex-start;
 }
 .detailContent i{
   font-family: 'Press Start 2P', cursive;
@@ -104,7 +114,7 @@ margin-left: 32.5%;
     }
 p{
     text-align: center;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: bold;
 }`
 
@@ -120,4 +130,21 @@ export const Button = styled.div`
     &:hover{
       background: #CAC20C;
     }
+`;
+
+
+export const ButtonBack = styled.div`
+   color: red;
+    width: 89px;
+    padding-left: 53px;
+    border: 2px solid red;
+    text-decoration: none;
+    border-radius: 16px;
+    background: #ffffff00;
+    text-decoration: none;
+    &:hover{
+      color: #7c0d0d;
+      border: 2px solid #7c0d0d;
+    }
+   
 `;

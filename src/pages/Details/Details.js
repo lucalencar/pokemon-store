@@ -3,7 +3,6 @@ import { useParams, Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { loadPokeName } from "../../redux/action/pokemonActionsSingle";
 import { POKE_KEY } from "../../redux/reducers/PokemonDetailsReducer";
-import { MdCatchingPokemon } from "react-icons/md";
 
 import * as S from "./styles";
 import "./styles.css";
@@ -92,14 +91,11 @@ const Details = () => {
                 />
                 </div>
                 <div>
-                  <S.Button>
-                    <MdCatchingPokemon color="black" cursor="pointer" size="50px"/>
-                    </S.Button>
-                                        
+                    
               <Link to="/home">
-                <h3 className="b-back">
+                <S.ButtonBack>
                   BACK
-                </h3>
+                </S.ButtonBack>
               </Link>
               </div>
             </Fragment>
