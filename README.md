@@ -15,17 +15,26 @@ Visualize a demo:
 
 ## Tech
 
-
-
-- [Reactjs] 
-- [React Redux] 
-- [ReactIcons]
-- [material-ui/icons] 
-- [node.js] 
-- [Firebase] -
-- [Styled-components] 
-- [React Router] 
--  [React Pagination] 
+-  yup
+- styled-components
+- redux-thunk
+- redux-persist
+- redux-devtools-extension
+- redux-actions
+- redux
+- react-redux
+- react-paginate
+- react-router-dom
+- axios
+- formik
+- react-bootstrap-modal
+- react-bootstrap
+- @mui/material
+- @material-ui/icons
+-  @fortawesome/fontawesome-free
+-  @fortawesome/fontawesome-svg-core
+-  @fortawesome/free-solid-svg-icons
+-  @fortawesome/react-fontawesome
 
 ## API
 
