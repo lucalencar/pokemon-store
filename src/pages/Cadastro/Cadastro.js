@@ -26,7 +26,7 @@ export default function Cadastro() {
 
   useEffect(() => {
     if (loading) return;
-    // if (user) navigate("../home");
+    if (user) navigate("/dashboard");
   }, [user, loading]);
 //DADOS DE CADASTRO
 
@@ -63,8 +63,8 @@ export default function Cadastro() {
             Cadastrar
           </S.Button>
 
-
           <S.Button type="submit" onClick={() => navigate('../login', { replace: true })}> Já tem uma conta?</S.Button>
+
         
         </S.Form>
       </S.FormDiv>
@@ -72,3 +72,4 @@ export default function Cadastro() {
   );
 
 }
+
