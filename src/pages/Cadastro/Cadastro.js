@@ -63,6 +63,7 @@ export default function Cadastro() {
             Cadastrar
           </S.Button>
 
+
           <S.Button type="submit" onClick={() => navigate('../login', { replace: true })}> Já tem uma conta?</S.Button>
         
         </S.Form>

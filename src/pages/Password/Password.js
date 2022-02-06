@@ -25,7 +25,7 @@ function Password() {
           className=""
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          placeholder="E-mail Address"
+          placeholder="Endereço de e-mail"
         />
         <S.Button className="" onClick={() => sendPasswordReset(email)}>
           Envie e-mail para recuperar senha
