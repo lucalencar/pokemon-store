@@ -3,6 +3,7 @@ import CloseIcon from "@material-ui/icons/Close";
 import useSearch from "../../hooks/useSearch";
 import * as S from './SearchBar.style';
 import useCart from "../../hooks/useCart";
+import {Link } from "react-router-dom";
 
 
 function SearchBar() {
@@ -35,8 +36,13 @@ function SearchBar() {
 
               <S.name key={key}>
                 <S.PokemonName>{pokemon.name}</S.PokemonName>
+                
+                          
+                           
                 <S.Button onClick={() => addToCartList(index(`${pokemon.name}`), `${pokemon.name}`, 1000, index(`${pokemon.name}`))}>Comprar</S.Button>
-                <S.Img src={imgUrl(index(`${pokemon.name}`))} />
+               <Link to={`/details/${pokemon.name}`}>
+                  <S.Img src={imgUrl(index(`${pokemon.name}`))} /> 
+                </Link>
               </S.name>
             );
           })}
