@@ -17,7 +17,7 @@ export default function Login() {
       loginDefault.email === dados.email &&
       loginDefault.password === dados.password
     ) {
-      navigate("home");
+      navigate("Home");
     } else {
       alert("E-mail ou senha inválios.");
     }
