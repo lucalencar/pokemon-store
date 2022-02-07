@@ -9,7 +9,7 @@ npm i
 npm start
 ```
 
-Visualize a demo:
+Visualize a demo: https://lucalencar.github.io/pokemon-store/
 
 
 
