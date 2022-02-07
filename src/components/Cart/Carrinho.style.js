@@ -72,7 +72,7 @@ export const BottomDiv = styled.div`
 `;
 
 export const PokeItem = styled(Container)`
-    overflow: scroll;
+    overflow: auto;
 `;
 
 export const Item = styled.div`

@@ -66,7 +66,7 @@ export default function Login() {
           <S.Label>Senha</S.Label>
          
           <S.Input 
-          type="{type}"
+          type={type}
             name="password"
             onChange={handleChange} 
             placeholder="Digite sua senha" >
