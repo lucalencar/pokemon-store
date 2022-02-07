@@ -5,8 +5,8 @@ export default function Titulos() {
     return (
         <S.TopDiv>
             <S.Container>
-                <S.TituloLeft>Product</S.TituloLeft>
-                <S.TituloCenter>Quantity</S.TituloCenter>
+                <S.TituloLeft>Pokemon</S.TituloLeft>
+                <S.TituloCenter>Quantidade</S.TituloCenter>
                 <S.TituloRight>Preço</S.TituloRight>
                 <S.TituloRight>Subtotal</S.TituloRight>
                 <S.TituloRight></S.TituloRight>
