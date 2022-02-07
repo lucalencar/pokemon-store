@@ -121,7 +121,7 @@ export const Senha = styled.div`
 export const Titulo = styled.h4`
    margin-top: 8px;
     top: 97px;
-    right: 225px;
+    right: 255px;
     position: absolute;
     font-family: Lato;
     font-style: normal;
