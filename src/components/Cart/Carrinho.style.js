@@ -180,7 +180,7 @@ export const Continuar = styled.button`
     cursor: pointer;
     &:hover{
       background: ${props => props.theme.buttonFgHover};
-      border-color: ${props => props.theme.buttonFgHover};
+      border-color: ${props => props.theme.buttonBgHover};
       color: ${props => props.theme.buttonBgHover};
     }
 `;
