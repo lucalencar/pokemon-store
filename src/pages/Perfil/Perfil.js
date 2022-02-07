@@ -1,4 +1,3 @@
-import { useNavigate } from "react-router-dom";
 import * as S from "./Perfil.styles";
 import Fundo from "../../img/FundoPerfil.jpeg"
 import photo from "../../img/photoAsh.jpg";
@@ -8,7 +7,6 @@ import * as yup from "yup";
 
 
 export default function Perfil() {
-    const navigate = useNavigate();
 
     const schema = yup.object({
         nome: yup.string().required("Nome obrigatorio!").max(30),
