@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/pokemon-store/static/css/main.667ff46a.css",
-    "main.js": "/pokemon-store/static/js/main.da3c82c5.js",
+    "main.js": "/pokemon-store/static/js/main.15a2547d.js",
     "static/media/backgroundLogin.jpg": "/pokemon-store/static/media/backgroundLogin.2e5a6a666f6c1dd54f9c.jpg",
     "static/media/pokedexloading.gif": "/pokemon-store/static/media/pokedexloading.9e92dfa9ffe6c17fe5ae.gif",
     "static/media/FundoPerfil.jpeg": "/pokemon-store/static/media/FundoPerfil.3cce0bc8527806129235.jpeg",
@@ -12,10 +12,10 @@
     "index.html": "/pokemon-store/index.html",
     "static/media/trash.svg": "/pokemon-store/static/media/trash.262b1381df41c6678f70ca2ae5d78df0.svg",
     "main.667ff46a.css.map": "/pokemon-store/static/css/main.667ff46a.css.map",
-    "main.da3c82c5.js.map": "/pokemon-store/static/js/main.da3c82c5.js.map"
+    "main.15a2547d.js.map": "/pokemon-store/static/js/main.15a2547d.js.map"
   },
   "entrypoints": [
     "static/css/main.667ff46a.css",
-    "static/js/main.da3c82c5.js"
+    "static/js/main.15a2547d.js"
   ]
 }
