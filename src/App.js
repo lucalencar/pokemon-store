@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route, BrowserRouter } from 'react-router-dom';
+import { Routes, Route, HashRouter } from 'react-router-dom';
 import { GlobalStyle } from './styles/global.js';
 import Carrinho from './pages/Carrinho/Carrinho.js';
 import Home from './pages/Home/Home.js';
@@ -16,7 +16,7 @@ function App() {
   const { theme } = useTheme();
 
 return (
-  <BrowserRouter basename="/">
+  <HashRouter basename="/">
     <ThemeProvider theme={theme}>
       <GlobalStyle />
       <div>
@@ -32,7 +32,7 @@ return (
         </Routes>
       </div>
     </ThemeProvider>
-  </BrowserRouter>
+  </HashRouter>
 );
 
 }
