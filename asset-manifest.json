@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/pokemon-store/static/css/main.667ff46a.css",
-    "main.js": "/pokemon-store/static/js/main.2877a03b.js",
+    "main.css": "/pokemon-store/static/css/main.ca0a9949.css",
+    "main.js": "/pokemon-store/static/js/main.48452dbc.js",
     "static/media/backgroundLogin.jpg": "/pokemon-store/static/media/backgroundLogin.2e5a6a666f6c1dd54f9c.jpg",
     "static/media/pokedexloading.gif": "/pokemon-store/static/media/pokedexloading.9e92dfa9ffe6c17fe5ae.gif",
     "static/media/FundoPerfil.jpeg": "/pokemon-store/static/media/FundoPerfil.3cce0bc8527806129235.jpeg",
@@ -11,11 +11,11 @@
     "static/media/Carrinho.svg": "/pokemon-store/static/media/Carrinho.904683affcdede0591e22944a92c60b8.svg",
     "index.html": "/pokemon-store/index.html",
     "static/media/trash.svg": "/pokemon-store/static/media/trash.262b1381df41c6678f70ca2ae5d78df0.svg",
-    "main.667ff46a.css.map": "/pokemon-store/static/css/main.667ff46a.css.map",
-    "main.2877a03b.js.map": "/pokemon-store/static/js/main.2877a03b.js.map"
+    "main.ca0a9949.css.map": "/pokemon-store/static/css/main.ca0a9949.css.map",
+    "main.48452dbc.js.map": "/pokemon-store/static/js/main.48452dbc.js.map"
   },
   "entrypoints": [
-    "static/css/main.667ff46a.css",
-    "static/js/main.2877a03b.js"
+    "static/css/main.ca0a9949.css",
+    "static/js/main.48452dbc.js"
   ]
 }
