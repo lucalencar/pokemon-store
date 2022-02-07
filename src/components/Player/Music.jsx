@@ -5,7 +5,7 @@ function App() {
 
   const [songs] = useState([
     {
-      src: "./Music/abertura.mp3"
+      src: "https://pomf2.lain.la/f/wzlex4u.mp3"
     },
   ]);
 
