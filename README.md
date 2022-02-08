@@ -1,5 +1,5 @@
 ## Projeto Accenture Pokemon
-
+Grupo: Laiza, Lucas, Erywelton, Petra, Dayane
 ## Instalação
 
 Instale as dependencias e devDependencias para rodar
