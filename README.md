@@ -1,5 +1,8 @@
 ## Projeto Accenture Pokemon
 Grupo: Laiza, Lucas, Erywelton, Petra, Dayane
+
+github page: https://lucalencar.github.io/pokemon-store/
+
 ## Instalação
 
 Instale as dependencias e devDependencias para rodar
