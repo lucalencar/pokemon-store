@@ -22,7 +22,7 @@ export default function useSearch() {
       init();
     }, []);
 
-  //const para filtrar o input e retornar o nome do pokemon
+  //const para filtrar o resultado baseado no que for digitado
     const handleFilter = (event) => {
       const searchWord = event.target.value;
       setWordEntered(searchWord);

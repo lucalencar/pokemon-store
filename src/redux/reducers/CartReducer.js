@@ -4,7 +4,7 @@ const INITIAL_STATE = {
   items: [],
   total: 0,
 };
-
+//reducer para puxar a action de adicionar o carrinho e retornar um novo state
 const CartReducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
     case TYPES.ADD_TO_CART: {
@@ -23,7 +23,7 @@ const CartReducer = (state = INITIAL_STATE, action) => {
         total: updatedCart.length,
       }
     }
-
+//reducer para puxar a action de remover do carrinho e retornar um novo state
     case TYPES.REMOVE_FROM_CART: {
       const updatedCart = [...state.items];
       const index = updatedCart.findIndex(x => x.id === action.payload.id);
@@ -37,7 +37,7 @@ const CartReducer = (state = INITIAL_STATE, action) => {
         total: updatedCart.length
       }
     }
-
+//reducer para puxar a action de incrementar a quantidade do item no carrinho e retornar um novo state
     case TYPES.INCREMENT: {
       const { payload } = action;
       const item = state.items.find(
@@ -59,7 +59,7 @@ const CartReducer = (state = INITIAL_STATE, action) => {
         items: [...state.items, item]
       };
     }
-
+//reducer para puxar a action de diminuir a quantidade do item no carrinho e retornar um novo state
     case TYPES.DECREMENT: {
       const { payload } = action;
       const item = state.items.find(

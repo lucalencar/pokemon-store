@@ -3,7 +3,6 @@ import { addToCart, removeFromCart, increment, decrement } from "../redux/action
 
 //hook para as funcionalidades do carrinho
 export default function useCart() {
-//state para armazenamento das informações pro carrinho
     const cartList = useSelector((state) => state.Cart);
     const dispatch = useDispatch();
 
@@ -31,7 +30,7 @@ export default function useCart() {
       const formatPrice = (e) => {
         return parseFloat(e).toLocaleString('pt-br', { style: 'currency', currency: 'BRL' });
     }
-//const para pegar a imagem pegando a id do pokemon
+//const para pegar a imagem pela id do pokemon
     const imgUrl = (e) => {
         return `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${e}.png`;
     }
